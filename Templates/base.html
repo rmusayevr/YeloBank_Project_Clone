@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+    {% endblock %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'CSS/base.css')}}">
+    {% block css %}
+    {% endblock %}
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg first-navbar">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item me-2">
+                    <a class="nav-link pt-0 first-nav {% if Individiual_active %} active {% endif %} hover-side" href="#">Fərdi</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link pt-0 first-nav hover-side" href="#">Biznes</a>
+                  </li>
+                  <li class="nav-item ms-2">
+                    <a class="nav-link pt-0 first-nav hover-side" href="#">Bank Haqqında</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav mb-2 mb-lg-0 mx-3">
+                    <li class="nav-item me-2">
+                        <a class="nav-link pt-0 first-nav" href="#">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            ATM və Filiallar
+                        </a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link pt-0 first-nav" href="#">
+                            <i class="bi bi-people-fill"></i>
+                            Onlayn növbə
+                        </a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link pt-0 first-nav" href="#">
+                            <i class="bi bi-telephone-fill"></i>
+                            981
+                        </a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link pt-0 first-nav" href="#">
+                            <i class="bi bi-search"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown ms-2 first-nav">
+                        <a class="nav-link pt-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            AZ
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">AZ</a></li>
+                            <li><a class="dropdown-item" href="#">EN</a></li>
+                            <li><a class="dropdown-item" href="#">RU</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+    </nav>
+   
+    <nav class="navbar navbar-expand-lg second-navbar position-fixed">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item mt-3 me-4">
+                        <a class="nav-link ps-0" href="{{ url_for('index') }}"><img src="{{ url_for('static', filename = 'images/logo.svg')}}" alt="logo"></a>
+                    </li>
+                    {% if Individiual_active %}
+                        <li class="nav-item second-nav">
+                            <a class="nav-link" href="{{ url_for('onlineCredit') }}">Kreditlər</a>
+                        </li>
+                        <li class="nav-item second-nav">
+                            <a class="nav-link" href="{{ url_for('cards') }}">Kartlar</a>
+                        </li>
+                        <li class="nav-item second-nav">
+                            <a class="nav-link" href="{{ url_for('deposit') }}">Əmanətlər</a>
+                        </li>
+                        <li class="nav-item second-nav">
+                            <a class="nav-link" href="#">Pul Köçürmələri</a>
+                        </li>
+                    {% endif %}
+                </ul>
+
+                <button type="button" class="btn btn-warning rounded-pill" id="bank_button">
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                    <span id="internet_bank">İnternet bank</span>
+                </button>
+                {% if Individiual_active %}
+                    <button type="button" class="btn btn-light rounded-circle border border-1" id="menu_button"><i class="bi bi-list"></i></button>
+                {% endif %}
+                
+            </div>
+        </div>
+      </nav>
+      {% if Individiual_active %} 
+        <div class="container d-none flex-row justify-content-between display-none">
+            <div class="d-flex flex-row justify-content-between w-60">
+                <div class="d-flex flex-column">
+                    <ul class="list-unstyled h-180">
+                        <h4><a href="#" class="text-decoration-none text-dark">Kreditlər</a></h4>
+                        <li><a href="#" class="text-decoration-none text-secondary"> İstehlak krediti</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary"> Daşınmaz əmlak girov krediti</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary"> Əmanət təminatlı kredit</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary"> İpoteka krediti</a></li>
+                    </ul>
+                    <ul class="list-unstyled h-350 mb-2">
+                        <h4><a href="#" class="text-decoration-none text-dark">Kart xidmətləri</a></h4>
+                        <li><a href="#" class="text-decoration-none text-secondary">Onlayn PIN SET</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Cashback</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">PIN Reset</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">PIN kodunun dəyişdirilməsi</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">SMS məlumatlandırma</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">3D secure</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Cash by code</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">Card to card</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary">ATM PIN SET</a></li>
+                    </ul>
+                    <h4 class="h-90"><a href="#" class="text-decoration-none text-dark">Forum</a></h4>
+                    <div class=" my-2">
+                        <p class="text-secondary mb-1">Bizi tap</p>
+                        <h6 style="font-size: 13px;">Həsən bəy Zərdabi 81K, Bakı AZ 1122, Azərbaycan</h6>
+                    </div>
+                </div>
+                <div class="d-flex flex-column">
+                    <ul class="list-unstyled h-180">
+                        <h4><a href="/az/individuals/cards/" class="text-decoration-none text-dark">Kartlar</a></h4>
+                        <li><a href="/az/individuals/cards/1" class="text-decoration-none text-secondary"> Yelo Light</a></li>
+                        <li><a href="/az/individuals/cards/2" class="text-decoration-none text-secondary"> Yelo Premium</a></li>
+                        <li><a href="/az/individuals/cards/3" class="text-decoration-none text-secondary"> Yelo Kredit kartı</a></li>
+                    </ul>
+                    <div class="h-350 mb-2">
+                        <ul class="list-unstyled h-180">
+                            <h4><a href="#" class="text-decoration-none text-dark">Pul köçürmələri</a></h4>
+                            <li><a href="#" class="text-decoration-none text-secondary">Western Union</a></li>
+                            <li><a href="#" class="text-decoration-none text-secondary">Zolotaya Korona</a></li>
+                        </ul>
+                        <ul class="list-unstyled">
+                            <h4><a href="#" class="text-decoration-none text-dark">Digər xidmətlər</a></h4>
+                            <li><a href="#" class="text-decoration-none text-secondary">Hesablaşma-kassa xidməti</a></li>
+                        </ul>
+                    </div>
+
+                    <h4 class="h-90"><a href="#" class="text-decoration-none text-dark">Kredit kalkulyatoru</a></h4>
+
+                    <div class="my-2">
+                        <p class="text-secondary mb-1">Əlaqə nömrəsi</p>
+                        <h6 style="font-size: 13px;">981</h6>
+                    </div>
+                </div>
+                <div class="d-flex flex-column">
+                    <ul class="list-unstyled h-180">
+                        <h4><a href="{{ url_for('deposit') }}" class="text-decoration-none text-dark">Əmanətlər</a></h4>
+                        <li><a href="#" class="text-decoration-none text-secondary"> Yelo Sabit</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary"> "Parlaq Zəfər" əmanəti</a></li>
+                        <li><a href="#" class="text-decoration-none text-secondary"> Yelo Yığım</a></li>
+                    </ul>
+                    <div class="h-350 mb-2">
+                        <ul class="list-unstyled h-180">
+                            <h4><a href="#" class="text-decoration-none text-dark">Onlayn xidmətlər</a></h4>
+                            <li><a href="/az/individuals/online-services/loan_request" class="text-decoration-none text-secondary">Online kredit sifarişi</a></li>
+                            <li><a href="#" class="text-decoration-none text-secondary">Onlayn ödəmə</a></li>
+                            <li><a href="#" class="text-decoration-none text-secondary">Online kredit ödənişi</a></li>
+                            <li><a href="#" class="text-decoration-none text-secondary">Onlayn növbə</a></li>
+                        </ul>
+                        <h4><a href="#" class="text-decoration-none text-dark">Cashback</a></h4>
+                    </div>
+                    <h4 class="h-90"><a href="#" class="text-decoration-none text-dark">Təklif və iradlar</a></h4>
+                    <div class="my-2">
+                        <p class="text-secondary mb-1">Bizə yazın</p>
+                        <h6 style="font-size: 13px;">bank@yelo.az</h6>
+                    </div>
+                </div>
+            </div>
+            <a href="#" style="background-image: url(/Assets/Images/artboard_7.png); background-repeat: no-repeat; background-size: cover;  width: 350px; height: 350px; border: 1px solid gainsboro; border-radius: 5px;"></a>
+        </div>
+    {% endif %}
+    {% block navbar %}
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
+
+
+
+    <div class="footer row container border-top d-flex flex-row align-items-sm-start justify-content-center m-auto not-menu">
+        <div class="footerElement col-3 mt-5">
+            <a href="#" class="text-dark"><h3>Fərdi</h3></a>
+            <a href="/az/individuals/online-services/loan_request/" class="text-secondary"><p>Kreditlər</p></a>
+            <a href="/az/individuals/cards/" class="text-secondary"><p>Kartlar</p></a>
+            <a href="/az/individuals/deposits/" class="text-secondary"><p>Əmanətlər</p></a>
+            <a href="#" class="text-secondary"><p>Pul köçürmələri</p></a>
+        </div>
+        <div class="footerElement col-3  mt-5">
+            <a href="#" class="text-dark"><h3>Biznes</h3></a>
+            <a href="/az/individuals/online-services/loan_request/" class="text-secondary"><p>Kreditlər</p></a>
+            <a href="/az/individuals/cards/" class="text-secondary"><p>Kartlar</p></a>
+            <a href="#" class="text-secondary"><p>Biznes xidmətlər</p></a>
+        </div>
+        <div class="footerElement col-3  mt-5">
+            <a href="#" class="text-dark"><h3>Bank Haqqında</h3></a>
+            <a href="#" class="text-secondary"><p>Rəhbərlik</p></a>
+            <a href="#" class="text-secondary"><p>Karyera</p></a>
+            <a href="#" class="text-secondary"><p>Hesabatlar</p></a>
+            <a href="#" class="text-secondary"><p>Komitələr</p></a>
+            <a href="#" class="text-secondary"><p>Sənədlər</p></a>
+            <a href="#" class="text-secondary"><p>Xəbərlər</p></a>
+        </div>
+        <div class="footerElement col-3  mt-5">
+            <a href="#" class="text-dark"><h3>Online xidmətlər</h3></a>
+            <a href="/az/individuals/online-services/loan_request/" class="text-secondary"><p>Online kredit sifarişi</p></a>
+            <a href="#" class="text-secondary"><p>Kart sifarişi</p></a>
+            <a href="#" class="text-secondary"><p>Online növbə</p></a>
+            <a href="#" class="text-secondary"><p>Online kredit ödənişi</p></a>
+            <a href="#" class="text-secondary"><p>Online ödəmə</p></a>
+        </div>
+    </div>
+    <div class="contact row container border-bottom mt-5 d-flex flex-row align-items-sm-start justify-content-center m-auto not-menu">
+        <div class="left-contact col-6 d-flex mt-5 row">
+            <a href="https://www.facebook.com/yelo.az" class="col-2 text-secondary"><i class="fa fa-facebook-f" style="font-size:24px"></i> </a>
+            <a href="https://www.instagram.com/yelobank/" class="col-2 text-secondary"><i class="fa fa-instagram" style="font-size:24px"></i></a>
+            <a href="https://www.linkedin.com/company/yelo-bank/" class="col-2 text-secondary"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a>
+            <a href="https://www.youtube.com/channel/UCz7siujqcwxQz3OcWqK5NLQ" class="col-2 text-secondary"><i class="fa fa-youtube" style="font-size:24px"></i></a>
+            <a href="https://twitter.com/yelo_bank" class="col-2 text-secondary"><i class="fa fa-twitter rounded" style="font-size:24px"></i></a>
+        </div>
+        <div class="right-bottom col-6 d-flex mt-5 justify-content-between">
+            <div class="mb-2">
+                <p class="text-secondary mb-1">Bizi tap</p>
+                <h6 style="font-size: 13px;">Həsən bəy Zərdabi 81K, Bakı AZ 1122, Azərbaycan</h6>
+            </div>
+            <div class="mb-2">
+                <p class="text-secondary mb-1">Əlaqə nömrəsi</p>
+                <h6 style="font-size: 13px;">981</h6>
+            </div>
+            <div class="mb-2">
+                <p class="text-secondary mb-1">Bizə yazın</p>
+                <h6 style="font-size: 13px;">bank@yelo.az</h6>
+            </div>
+        </div>
+    </div>
+    <div class="final d-flex flex-column align-items-center justify-content-center mt-4 not-menu">
+        <h2><span class="name" style="font-family: cursive;">yelo</span> bank</h2>
+        <div class="foot-data mt-3 d-flex flex-row justify-content-around w-50">
+            <p>© 2022 Yelo Bank</p>
+            <a href="https://www.e-gov.az/" class="text-secondary">E-portal</a>
+            <a href="https://www.adif.az/" class="text-secondary">ADİF</a>
+            <a href="https://infobank.az/" class="text-secondary">infobank.az</a>
+            <a href="https://qdf.gov.az/iane-et/" class="text-secondary">Qarabağ dirçəliş fondu</a>
+            <a href="https://gpp.az/WebPortal/Infosite/Sc/989000/Category/8" class="text-secondary">Yaşat fondu</a>
+        </div>
+    </div>
+    {% block footer %}
+    {% endblock %}
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3895682cdd.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename = 'JavaScript/base.js')}}"></script>
+    {% block js %}
+    {% endblock %}
+</body>
+</html>

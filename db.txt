@@ -1,0 +1,616 @@
+Cards
+
+card1 = Cards(card_img = "https://www.yelo.az/site/assets/files/5731/55_2.png", card_name = "Yelo Light", description = "Yelo kart rahatlıq anlayışını dəyişəcək - rahat xərcləyəcəksən, rahat izləyəcəksən, qazanacaqsan, endirimlər alacaqsan.", duration_v = "1 il / 3 il", currency_v = "AZN / USD / EUR", cashback_v = "30%-dək", card_detail = '''<div class="w-50 m-auto mt-5 d-flex  justify-content-center">
+            <h6 class="text-center  h5 mt-5">Çoxfunksiyalı Yelo kart ilə yalnız qalıq məbləğə faiz gəliri deyil, həm
+                də hər ödənişindən cashback qazanacaq və digər üstünlüklərindən faydalanacaqsan</h6>
+    </div>
+    <div class="icons-container  row w-75 m-auto mb-3 mt-5">
+            <div class="col-3 d-flex flex-row align-items-center justify-content-center mb-3">
+                <div class="bg-primary d-flex flex-row align-items-center justify-content-center"
+                    style="min-width: 55px; min-height: 55px; border-radius: 5px;"><span
+                        style='font-size:40px;color: white; '>&#8380;</span></div>
+                <p class="text-secondary mt-3">Valyuta: AZN / USD / EUR</p>
+            </div>
+            <div class="col-3 d-flex flex-row align-items-center justify-content-center mb-3">
+                <div class=" d-flex flex-row align-items-center justify-content-center"
+                    style="min-width: 55px; min-height: 55px; border-radius: 5px; background-color: blueviolet;"><i
+                        class='far fa-calendar' style='font-size:40px; color: white;'></i></div>
+                <p class="text-secondary mt-3">Kart müddəti: 1 il / 3 il / 5 il</p>
+            </div>
+            <div class="col-3 d-flex flex-row align-items-center justify-content-start mb-3 ">
+                <div class="bg-danger d-flex flex-row align-items-center justify-content-center"
+                    style="min-width: 55px; min-height: 55px; border-radius: 5px;"><i class="fa fa-percent"
+                        style="font-size:30px; color: white;"></i></div>
+                <p class="text-secondary mt-3">Balansdakı qalığa gəlir illik 5% (AZN) / 0.1% (USD)</p>
+            </div>
+            <div class="col-3 d-flex flex-row align-items-center justify-content-center mb-3">
+                <div class="bg-success d-flex flex-row align-items-center justify-content-center"
+                    style="min-width: 55px; min-height: 55px; border-radius: 5px;"><i class="fa fa-refresh"
+                        style="font-size:30px; color: white;"></i></div>
+                <p class="text-secondary mt-3">Partnyorlarda 30%-dək cashback</p>
+            </div>
+            <div class="col-3 d-flex flex-row align-items-center justify-content-center mb-3">
+                <div class=" d-flex flex-row align-items-center justify-content-center"
+                    style="min-width: 55px; min-height: 55px; border-radius: 5px; background-color: rgb(11, 46, 26);"><i
+                        class="fa fa-retweet" style="font-size:30px; color: white;"></i></div>
+                <p class="text-secondary mt-3">Ölkədaxili hər yerdə 0.5% cashback</p>
+            </div>
+            <div class="col-3 d-flex flex-row align-items-center justify-content-center mb-3">
+                <div class="bg-primary d-flex flex-row align-items-center justify-content-center"
+                    style="min-width: 55px; min-height: 55px; border-radius: 5px;"><i class="fa fa-money"
+                        style="font-size:30px; color: white;"></i></div>
+                <p class="text-secondary mt-3">Yelo Bank ATM-lərindən pulun komissiyasız çıxarılması</p>
+            </div>
+            <div class="col-3 d-flex flex-row align-items-center justify-content-center mb-3">
+                <div class="bg-warning d-flex flex-row align-items-center justify-content-center"
+                    style="min-width: 55px; min-height: 55px; border-radius: 5px;"><i class="fa fa-bookmark"
+                        style="font-size:30px; color: white;"></i></div>
+                <p class="text-secondary mt-3">Qiymət: 1 illik - 10 AZN / 3 illik - 15 AZN (pulsuz almaq imkanı)</p>
+            </div>
+            <div class="col-3 d-flex flex-row align-items-center justify-content-center mb-3">
+                <div class=" d-flex flex-row align-items-center justify-content-center"
+                    style="min-width: 55px; min-height: 55px; border-radius: 5px; color: white;"><i class="fa fa-bookmark"
+                        style="font-size:30px; color: white;"></i></div>
+                <p class="text-light mt-3">Qiymət: 1 illik - 10 AZN / 3 illik - 15 AZN (pulsuz almaq imkanı)</p>
+            </div>
+        
+        </div>
+        <div class="bottom-container mt-5">
+            <div class="card-text m-auto mt-5 card-info">
+                <h5 class="text-center h6">Pulsuz 3 illik kartı 100 AZN / 50 USD / 50 EUR ilkin mədaxil etməklə əldə edə
+                    bilərsən!*</h5>
+                <p class="text-secondary mt-3 h6 font-weight-light ">Kartın yalnız şaquli formasına görə deyil, həm də kənarının rənginə görə pul
+                    qabında digər kartlardan fərqlənəcək. Tezliklə bu kartı daha çox sevəcəksən. Debet kart ilə dünyanın
+                    istənilən ölkəsində rahat alış-veriş, onlayn ödənişlər edə, restoran, bilet və digər xidmətlərdən
+                    istifadə edə və ya vəsaiti rahat nağdlaşdıra bilərsiniz. Həmçinin debet kart şifrəsini online pin set
+                    xidmətindən yararlanaraq təyin edə bilərsiniz. Bu və daha çox üstünlüklərdən yararlanmaq üçün aşağıdakı
+                    sifariş formasından istifadə edərək debet kart sifarişi edə bilərsiniz. <br> <br>*Hal-hazırda ilkin
+                    mədaxil etməklə pulsuz kartı filialdan sifariş edə bilərsən.</p>
+            </div>
+            <div class="cahsback mt-5 w-100">
+                <h3 class="text-center">Hər ay seçdiyiniz kateqoriyalardan daha çox cashback qazanmaq imkanı</h3>
+                <div class="d-flex flex-row m-auto mt-5">
+                    <div class="col-3 d-flex flex-row align-items-center justify-content-center mb-3 ">
+                        <div class=" d-flex flex-row rounded-circle align-items-center justify-content-center bg-primary"
+                            style="min-width: 55px; min-height: 55px; border-radius: 5px;"><i
+                                class='fas fa-gas-pump rounded' style='font-size:30px; color: white'></i></div>
+                        <p class="text-secondary  m-3 mt-0 mb-0">Yanacaqdoldurma məntəqələri:
+                            <br> <span class="text-dark"> 4% cashback</span>
+                        </p>
+                    </div>
+                    <div class="col-3 d-flex flex-row align-items-center justify-content-start mb-3 ">
+                        <div class="bg-warning d-flex rounded-circle flex-row align-items-center justify-content-center"
+                            style="min-width: 55px; min-height: 55px; border-radius: 5px;"><i class="fa fa-cutlery"
+                                style="font-size:30px ; color: white"></i></div>
+                        <p class="text-secondary  m-3 mt-0 mb-0 ">Kafe və Restoranlar: <br> <span class="text-dark"> 4%
+                                cashback</span></p>
+                    </div>
+                    <div class="col-3 d-flex flex-row align-items-center justify-content-center mb-3">
+                        <div class="bg-info rounded-circle d-flex flex-row align-items-center justify-content-center"
+                            style="min-width: 55px; min-height: 55px; border-radius: 5px;"><i class="fas fa-tshirt"
+                                style="font-size:30px; color: white;"></i></div>
+                        <p class="text-secondary  m-3 mt-0 mb-0 ">Geyim Mağazaları: <br><span class="text-dark"> 4%
+                                cashback</span></p>
+                    </div>
+                    <div class="col-3 d-flex  flex-row align-items-center justify-content-center mb-3">
+                        <div class=" d-flex flex-row rounded-circle bg-success align-items-center justify-content-center"
+                            style="min-width: 55px; min-height: 55px; border-radius: 5px;"><i class="fa fa-cutlery"
+                                style="font-size:30px ; color: white"></i> </div>
+                        <p class="text-secondary  m-3 mt-0 mb-0 ">Market və Supermarketlər: <br><span class="text-dark"> 2%
+                                cashback</span> </p>
+                    </div>
+                </div>
+            </div>
+        </div>''')
+card1.save()
+
+card2 = Cards(card_img = "https://www.yelo.az/site/assets/files/7856/visa-platinum.svg", card_name = "Yelo Premium", description = "Yüksək statusun göstəricisi olan bu kart sahibinə yaqsan.", duration_v = " 3 il", currency_v = "AZN / USD / EUR", cashback_v = "30%-dək", card_detail = '''<div class="w-50 m-auto mt-5 d-flex  justify-content-center">
+        <h6 class="text-center  h5 mt-5">Harada olmağınızdan asılı olmayaraq yüksək statusu ilə eksklüziv imkanlar
+            yaratmaqla yanaşı əlavə gəlir də qazandırır. Sifariş edərək bu kartın üstünlüklərini hiss edin.</h6>
+    </div>
+    <div class="icons-container  row w-75 m-auto mb-3 mt-5">
+        <div class="col-3 d-flex flex-row align-items-center justify-content-center mb-3">
+            <div class="bg-primary d-flex flex-row align-items-center justify-content-center"
+                style="min-width: 55px; min-height: 55px; border-radius: 5px;"><span
+                    style='font-size:40px;color: white; '>&#8380;</span>
+            </div>
+            <p class="text-secondary mt-3">Valyuta: AZN / USD / EUR</p>
+        </div>
+        <div class="col-3 d-flex flex-row align-items-center justify-content-center mb-3">
+            <div class=" d-flex flex-row align-items-center justify-content-center"
+                style="min-width: 55px; min-height: 55px; border-radius: 5px; background-color: blueviolet;"><i
+                    class='far fa-calendar' style='font-size:40px; color: white;'></i>
+            </div>
+            <p class="text-secondary mt-3">Kart müddəti: 1 il / 3 il / 5 il</p>
+        </div>
+        <div class="col-3 d-flex flex-row align-items-center justify-content-start mb-3 ">
+            <div class="bg-danger d-flex flex-row align-items-center justify-content-center"
+                style="min-width: 55px; min-height: 55px; border-radius: 5px;"><i class="fa fa-percent"
+                    style="font-size:30px; color: white;"></i>
+            </div>
+            <p class="text-secondary mt-3">Balansdakı qalığa gəlir illik 7% (AZN) / 0.2% (USD)</p>
+        </div>
+        <div class="col-3 d-flex flex-row align-items-center justify-content-center mb-3">
+            <div class="bg-success d-flex flex-row align-items-center justify-content-center"
+                style="min-width: 55px; min-height: 55px; border-radius: 5px;"><i class="fa fa-refresh"
+                    style="font-size:30px; color: white;"></i>
+            </div>
+            <p class="text-secondary mt-3">Partnyorlarda 30%-dək cashback</p>
+        </div>
+        <div class="col-3 d-flex flex-row align-items-center justify-content-center mb-3">
+            <div class=" d-flex flex-row align-items-center justify-content-center"
+                style="min-width: 55px; min-height: 55px; border-radius: 5px; background-color: rgb(11, 46, 26);"><i
+                    class="fa fa-retweet" style="font-size:30px; color: white;"></i>
+            </div>
+            <p class="text-secondary mt-3">Ölkədaxili hər yerdə 1% cashback</p>
+        </div>
+        <div class="col-3 d-flex flex-row align-items-center justify-content-center mb-3">
+            <div class="bg-warning d-flex flex-row align-items-center justify-content-center"
+                style="width: 55px; height: 55px; border-radius: 5px;"><i class="fa fa-envelope"
+                    style="font-size:30px; color: white;"></i>
+            </div>
+            <p class="text-secondary mt-3">Pulsuz SMS bildiriş</p>
+        </div>
+        <div class="col-3 d-flex flex-row align-items-center justify-content-center mb-3">
+            <div class="bg-primary d-flex flex-row align-items-center justify-content-center"
+                style="min-width: 55px; min-height: 55px; border-radius: 5px;"><i class="fa fa-money"
+                    style="font-size:30px; color: white;"></i>
+            </div>
+            <p class="text-secondary mt-3">Yelo Bank ATM-lərindən pulun komissiyasız çıxarılması</p>
+        </div>
+        <div class="col-3 d-flex flex-row align-items-center justify-content-center mb-3">
+            <div class="bg-warning d-flex flex-row align-items-center justify-content-center"
+                style="min-width: 55px; min-height: 55px; border-radius: 5px;"><i class="fa fa-bookmark"
+                    style="font-size:30px; color: white;"></i>
+            </div>
+            <p class="text-secondary mt-3">Qiymət: 50 AZN (pulsuz almaq imkanı) (pulsuz almaq imkanı)</p>
+        </div>
+        <div class="col-3 d-flex flex-row align-items-center justify-content-center mb-3">
+            <div class="bg-danger d-flex flex-row align-items-center justify-content-center"
+                style="min-width: 55px; min-height: 55px; border-radius: 5px;"><i class="fa fa-user"
+                    style="font-size:30px; color: white;"></i>
+            </div>
+            <p class="text-secondary mt-3">Konsyerj çat-bot</p>
+        </div>
+        <div class="col-3 d-flex flex-row align-items-center justify-content-center mb-3">
+            <div class=" d-flex flex-row align-items-center justify-content-center"
+                style="min-width: 55px; min-height: 55px; border-radius: 5px; color: white;"><i class="fa fa-bookmark"
+                    style="font-size:30px; color: white;"></i></div>
+            <p class="text-light mt-3">Qiymət: 1 illik - 10 AZN / 3 illik - 15 AZN (pulsuz almaq imkanı)</p>
+        </div><div class="col-3 d-flex flex-row align-items-center justify-content-center mb-3">
+            <div class=" d-flex flex-row align-items-center justify-content-center"
+                style="min-width: 55px; min-height: 55px; border-radius: 5px; color: white;"><i class="fa fa-bookmark"
+                    style="font-size:30px; color: white;"></i></div>
+            <p class="text-light mt-3">Qiymət: 1 illik - 10 AZN / 3 illik - 15 AZN (pulsuz almaq imkanı)</p>
+        </div><div class="col-3 d-flex flex-row align-items-center justify-content-center mb-3">
+            <div class=" d-flex flex-row align-items-center justify-content-center"
+                style="min-width: 55px; min-height: 55px; border-radius: 5px; color: white;"><i class="fa fa-bookmark"
+                    style="font-size:30px; color: white;"></i></div>
+            <p class="text-light mt-3">Qiymət: 1 illik - 10 AZN / 3 illik - 15 AZN (pulsuz almaq imkanı)</p>
+        </div>
+        
+    </div>
+    <div class="bottom-container  mt-5">
+        <div class="card-text m-auto mt-5 card-info">
+            <h5 class="text-center h6">Kartı 1000 AZN / 500 USD / 500 EUR dəyərində mədaxil etməklə pulsuz əldə edərək bir
+                çox
+                əlavə üstünlüklər də qazana bilərsən!*</h5>
+            <p class="text-secondary mt-3 h6 font-weight-light">Kartınız yalnız şaquli formasına görə deyil, həm də kənarının rənginə görə pul
+                qabında digər kartlardan fərqlənəcək. Tezliklə bu kartı daha çox sevəcəksiniz. <br> <br>*Hal-hazırda
+                ilkin
+                mədaxil etməklə pulsuz kartı filialdan sifariş edə bilərsən.</p>
+        </div>
+        <div class="cahsback mt-5 w-100">
+            <h3 class="text-center">Hər ay seçdiyiniz kateqoriyalardan daha çox cashback qazanmaq imkanı</h3>
+            <div class="d-flex flex-row m-auto mt-5">
+                <div class="col-3 d-flex flex-row align-items-center justify-content-center mb-3 ">
+                    <div class=" d-flex flex-row rounded-circle align-items-center justify-content-center bg-primary"
+                        style="min-width: 55px; min-height: 55px; border-radius: 5px;"><i
+                            class='fas fa-gas-pump rounded' style='font-size:30px; color: white'></i></div>
+                    <p class="text-secondary  m-3 mt-0 mb-0">Yanacaqdoldurma məntəqələri:
+                        <br> <span class="text-dark"> 5% cashback</span>
+                    </p>
+                </div>
+                <div class="col-3 d-flex flex-row align-items-center justify-content-start mb-3 ">
+                    <div class="bg-warning d-flex rounded-circle flex-row align-items-center justify-content-center"
+                        style="min-width: 55px; min-height: 55px; border-radius: 5px;"><i class="fa fa-cutlery"
+                            style="font-size:30px ; color: white"></i></div>
+                    <p class="text-secondary  m-3 mt-0 mb-0 ">Kafe və Restoranlar: <br> <span class="text-dark"> 5%
+                            cashback</span></p>
+                </div>
+                <div class="col-3 d-flex flex-row align-items-center justify-content-center mb-3">
+                    <div class="bg-info rounded-circle d-flex flex-row align-items-center justify-content-center"
+                        style="min-width: 55px; min-height: 55px; border-radius: 5px;"><i class="fas fa-tshirt"
+                            style="font-size:30px; color: white;"></i></div>
+                    <p class="text-secondary  m-3 mt-0 mb-0 ">Geyim Mağazaları: <br><span class="text-dark"> 5%
+                            cashback</span></p>
+                </div>
+                <div class="col-3 d-flex  flex-row align-items-center justify-content-center mb-3">
+                    <div class=" d-flex flex-row rounded-circle bg-success align-items-center justify-content-center"
+                        style="min-width: 55px; min-height: 55px; border-radius: 5px;"><i class="fa fa-cutlery"
+                            style="font-size:30px ; color: white"></i> </div>
+                    <p class="text-secondary  m-3 mt-0 mb-0 ">Market və Supermarketlər: <br><span class="text-dark"> 2%
+                            cashback</span> </p>
+                </div>
+            </div>
+        </div>
+    </div>''')
+card2.save()
+
+card3 = Cards(card_img = "https://www.yelo.az/site/assets/files/5731/55_2.png", card_name = "Yelo Credit kartı", description = "Yelo Kredit kartı - rahat xərcləmək üçün", duration_v = "300 - 10 000 AZN", currency_v = "45 günədək", cashback_v = "30%-dək", duration = "Məbləğ", currency = "Güzəşt müddəti", card_detail = ''' <div class="w-50 m-auto mt-5 d-flex  justify-content-center">
+        <h6 class="text-center h5 mt-5">Yelo Grace Light kart ilə hər ay yalnız hesablanmış faizlər ödəməklə 10
+            000 AZN-ə dək kredit əldə et</h6>
+    </div>
+    <div class="icons-container  row w-75 m-auto mb-5 mt-5">
+        <div class="col-3 d-flex flex-row align-items-center justify-content-center mb-3">
+            <div class=" d-flex flex-row align-items-center justify-content-center"
+                style="min-width: 55px; min-height: 55px; border-radius: 5px; background-color: #0091FE;"><i
+                    class='fas fa-wallet' style='font-size:40px; color: white;'></i>
+            </div>
+            <p class="text-secondary mt-3">Məbləğ: 300 - 10 000 AZN</p>
+        </div>
+        <div class="col-3 d-flex flex-row align-items-center justify-content-center mb-5 ">
+            <div class=" d-flex flex-row align-items-center justify-content-center"
+                style="min-width: 55px; min-height: 55px; border-radius: 5px; background-color: blueviolet;"><i
+                    class='far fa-calendar' style='font-size:40px; color: white;'></i>
+            </div>
+            <p class="text-secondary mt-3">Müddət: 36 ay</p>
+        </div>
+        <div class="col-3 d-flex flex-row align-items-center justify-content-start mb-3 ">
+            <div class="bg-danger d-flex flex-row align-items-center justify-content-center"
+                style="min-width: 55px; min-height: 55px; border-radius: 5px;"><i class="fa fa-percent"
+                    style="font-size:30px; color: white;"></i>
+            </div>
+            <p class="text-secondary mt-3">İllik faiz dərəcəsi: Light 25% / Premium 23%</p>
+        </div>
+        <div class="col-3 d-flex flex-row align-items-center justify-content-center mb-3">
+            <div class="bg-primary d-flex flex-row align-items-center justify-content-center"
+                style="min-width: 55px; min-height: 55px; border-radius: 5px;"><i class="fa fa-clock-o"
+                    style="font-size:30px; color: white;"></i>
+            </div>
+            <p class="text-secondary mt-3">45 günədək güzəşt müddəti</p>
+        </div>
+        <div class="col-3 d-flex flex-row align-items-center justify-content-start mb-3 ">
+            <div class="bg-danger d-flex flex-row align-items-center justify-content-center"
+                style="min-width: 55px; min-height: 55px; border-radius: 5px; background-color: #75842F;"><i
+                    class="fa fa-percent" style="font-size:30px; color: white;"></i>
+            </div>
+            <p class="text-secondary mt-3">Nağdlaşdırma komissiyası: 1%</p>
+        </div>
+        <div class="col-3 d-flex flex-row align-items-center justify-content-center mb-3">
+            <div class="bg-success d-flex flex-row align-items-center justify-content-center"
+                style="min-width: 55px; min-height: 55px; border-radius: 5px;"><i class="fa fa-refresh"
+                    style="font-size:30px; color: white;"></i>
+            </div>
+            <p class="text-secondary mt-3">Partnyorlarda 30%-dək cashback</p>
+        </div>
+        <div class="col-3 d-flex flex-row align-items-center justify-content-center mb-3">
+            <div class=" d-flex flex-row align-items-center justify-content-center"
+                style="min-width: 55px; min-height: 55px; border-radius: 5px; background-color: #55CD62;"><i
+                    class="fa fa-wifi" style="font-size:30px; color: white;"></i>
+            </div>
+            <p class="text-secondary mt-3">Ödəniş növü: Sərbəst</p>
+        </div>
+        <div class="col-3 d-flex flex-row align-items-center justify-content-center mb-3">
+            <div class=" d-flex flex-row align-items-center justify-content-center"
+                style="min-width: 55px; min-height: 55px; border-radius: 5px; background-color: #A523E6;"><i
+                    class="fa fa-mobile-phone" style="font-size:30px; color: white;"></i>
+            </div>
+            <p class="text-secondary mt-3">Pulsuz mobil əlavə</p>
+        </div>
+        <div class="col-3 d-flex flex-row align-items-center justify-content-start mb-3 ">
+            <div class="bg-danger d-flex flex-row align-items-center justify-content-center"
+                style="min-width: 55px; min-height: 55px; border-radius: 5px; background-color: #F799B9;"><i
+                    class="fa fa-percent" style="font-size:30px; color: white;"></i>
+            </div>
+            <p class="text-secondary mt-3">Rəsmiləşdirmə komissiyası: 1%</p>
+        </div>
+        <div class="col-3 d-flex flex-row align-items-center justify-content-center mb-3">
+            <div class="bg-primary d-flex flex-row align-items-center justify-content-center"
+                style="min-width: 55px; min-height: 55px; border-radius: 5px;"><span
+                    style='font-size:40px;color: white; '>&#8380;</span>
+            </div>
+            <p class="text-secondary mt-3">Valyuta: AZN</p>
+        </div>
+        <div class="col-3 d-flex flex-row align-items-center justify-content-center mb-3">
+            <div class="d-flex flex-row align-items-center justify-content-center"
+                style="min-width: 55px; min-height: 55px; border-radius: 5px; background-color: #75842F;"><i
+                    class="fa fa-refresh" style="font-size:30px; color: white;"></i>
+            </div>
+            <p class="text-secondary mt-3">Hər yerdə cashback (Light 0.5% / Premium 1%)</p>
+        </div>
+        <div class="col-3 d-flex flex-row align-items-center justify-content-center mb-3">
+            <div class=" d-flex flex-row align-items-center justify-content-center"
+                style="min-width: 55px; min-height: 55px; border-radius: 5px; background-color: #55CD62;"><i
+                    class="fa fa-wifi" style="font-size:30px; color: white;"></i>
+            </div>
+            <p class="text-secondary mt-3">Təmassız ödəniş</p>
+        </div>
+        <div class="col-3 d-flex flex-row align-items-center justify-content-center mb-3">
+            <div class="bg-danger d-flex flex-row align-items-center justify-content-center"
+                style="min-width: 55px; min-height: 55px; border-radius: 5px;"><i class="fa fa-bookmark"
+                    style="font-size:30px; color: white;"></i>
+            </div>
+            <p class="text-secondary mt-3">Kartın qiyməti:Pulsuz *</p>
+        </div>
+        <div class="col-3 d-flex flex-row align-items-center justify-content-center mb-3">
+            <div class="bg-light d-flex flex-row align-items-center justify-content-center"
+                style="min-width: 55px; min-height: 55px; border-radius: 5px; color: white;"><i class="fa fa-bookmark"
+                    style="font-size:30px; color: white;"></i>
+            </div>
+            <p class="text-secondary mt-3 text-light">Kartın qiyməti: Pulsuz *</p>
+        </div>
+        <div class="col-3 d-flex flex-row align-items-center justify-content-center mb-3">
+            <div class="bg-light d-flex flex-row align-items-center justify-content-center"
+                style="min-width: 55px; min-height: 55px; border-radius: 5px; color: white;"><i class="fa fa-bookmark"
+                    style="font-size:30px; color: white;"></i>
+            </div>
+            <p class="text-secondary mt-3 text-light">Kartın qiyməti: Pulsuz *</p>
+        </div>
+        <div class="col-3 d-flex flex-row align-items-center justify-content-center mb-3">
+            <div class="bg-light d-flex flex-row align-items-center justify-content-center"
+                style="min-width: 55px; min-height: 55px; border-radius: 5px; color: white;"><i class="fa fa-bookmark"
+                    style="font-size:30px; color: white;"></i>
+            </div>
+            <p class="text-secondary mt-3 text-light">Kartın qiyməti: Pulsuz *</p>
+        </div>
+    </div> 
+    <div class="bottom-container mt-5">
+        <div class="card-text m-auto mt-5 card-info">
+            <h5 class="text-center h6">Kartı 1000 AZN / 500 USD / 500 EUR dəyərində mədaxil etməklə pulsuz əldə edərək bir
+                çox əlavə üstünlüklər də qazana bilərsən!*</h5>
+            <p class="text-secondary h6 font-weight-light">Kartınız yalnız şaquli formasına görə deyil, həm də kənarının rənginə görə pul
+                qabında digər kartlardan fərqlənəcək. Tezliklə bu kartı daha çox sevəcəksiniz. <br> <br>*Hal-hazırda
+                ilkin mədaxil etməklə pulsuz kartı filialdan sifariş edə bilərsən.</p>
+        </div>
+    </div>''')
+card3.save()
+
+Deposits
+
+deposit1 = Deposits(deposit_img = "https://www.yelo.az/site/assets/files/3378/shutterstock_478944469-3_1.png", deposit_name = "Yelo Sabit", description = "Pulunuz sizin üçün işləsin", amount_v = "min. 100 AZN/USD", durration_v = "12 / 18 / 24 ay", percentage_pay_v = "aylıq və ya müddətin sonunda")
+
+deposit1.save()
+
+deposit2 = Deposits(deposit_img = "https://www.yelo.az/site/assets/files/6636/zefer_emaneti-isolated.png", deposit_name = "Parlaq Zəfər əmanəti", description = "Pulunuz sizin üçün işləsin", amount_v = "min.  100 AZN", durration_v = "12 ay", percentage_pay_v = "aylıq və ya müddətin sonunda")
+
+deposit2.save()
+
+deposit3 = Deposits(deposit_img = "https://www.yelo.az/site/assets/files/3406/depositnew-pic.png", deposit_name = "Yelo Yığım", description = "Pulunuz sizin üçün işləsin", amount_v = "100 AZN/USD", durration_v = "12 ay", percentage_pay_v = "aylıq və ya müddətin sonunda", amount = "Minimal məbləğ")
+
+deposit3.save()
+
+Branches
+
+branch1 = Branches("Baş ofis / MXM (20 yanvar m/s)", "BO20")
+branch1.save()
+
+branch2 = Branches("28 May filialı (Qış parkı)", "28QP")      
+branc2.save()
+
+branch3 = Branches("Filial № 5 (Sahil m/s)", "FS5") 
+branch3.save()
+
+branch4 = Branches("Mərkəz Filialı","MF")
+branch4.save()
+
+branch5 = Branches("Elmlər Akademiyası m/s", "EAMS") 
+branch5.save()
+
+
+Stories:
+    id: 1;
+    title: Kredit;
+    img: Assets/Images/story-kredit.png;
+    description: Xərclərini təxirə salma, hər zaman dəstək üçün Yelo Bank var;
+    text_bg: text-bg-primary;
+    text: text-primary;
+    id: 2;
+    title: Cashback;
+    img: Assets/Images/stories-6.png;
+    description: 600-dən çox partnyoru özündə birləşdirən Cashback proqramı;
+    text_bg: text-bg-danger;
+    text: text-danger;
+    id: 3;
+    title: Yelo kart;
+    img: Assets/Images/stories-5-pic.png;
+    description: Yelo kart hər əməliyyatda rahatlıq anlayışını dəyişəcək;
+    text_bg: text-bg-success;
+    text: text-success;
+
+News:
+    id: 1;
+    title: Yelo Bank-da “Women’s sharing circle” layihəsinin ikinci proqramı baş tutdu;
+    slug: yelo-bankda-women-sharing-circle-layihesi-bas-tutdu;
+    date: 3 İyun 2022;
+    description: Yelo Bankın dəstəyi ilə DanceAbility Azərbaycan şirkəti tərəfindən “Women’s sharing circle” sosial layihəsinin ikinci proqramı baş tutdu. Ayda bir dəfə Bankın baş ofisində həyata keçirilən layihə müxtəlif yaşda, fərqli peşə sahibləri, sağlamlıq imkanları məhdud olan və olmayan qadınları bir araya gətirir. Proqram qadınlara DanceAbility metodu və aktiv meditasiya əsasında vücud vasitəsilə öz emosiyalarını ifadə etməyə, həmçinin digər insanlarla empatik ünsiyyət qurmaq imkanı yaradan universal vasitələr öyrədir. Eyni zamanda proqram sayəsində iştirakçılar fiziki fəaliyyət və bədii ifadə üçün bərabər imkanlardan faydalanır, yeni dostluq əlaqələri qazanırlar. Layihə DanceAbility və Ecstatic Awakening Dance metodları üzrə beynəlxalq dərəcəli müəllim Nigar Sultanovanın mentorluğu ilə keçirilir.
+    <br><br>
+    Yelo Bank-ın bu layihədə əsas məqsədi qadınları gücləndirmək, sağlamlığı və rifahı naminə seçim etmək üçün imkan yaratmaqdır. Layihə eyni zamanda zehni, emosional və fiziki sağlamlığın inkişafını da dəstəkləməyi hədəfləyir. Qeyd edək ki, müasir interyerə malik olan Bank-ın Baş ofisi fiziki məhdudiyyətli şəxslərin bankdaxilində rahat hərəkətini təmin edən imkanlara sahibdir.
+    <br><br>
+    Bank xidmətləri, o cümlədən, kredit kartı haqqında əlavə sualınız var? O zaman 981 nömrəsinə zəng edin və ya Facebook, Instagram  və ya Whatsapp hesablarımıza yazın.
+    <br><br>
+    Yelo Bank – Parlaq bankçılıq!;
+
+    id: 2;
+    title: Yelo Bank-da İnsan hüquqları üzrə müsabiqə baş tutdu;
+    slug: insan-huquqlari-uzre-musabiqe;
+    date: 31 May 2022;
+    description: Fəal təhsil dəstəkçisi olan Yelo Bank bu dəfə gənc hüquqşünaslara qapılarını açdı. Bankın maliyyə və təşkilati dəstəyi ilə ELSA Azerbaijan (Avropa Hüquqşünas Tələbələr Assosiasiyası) tərəfindən İnsan hüquqları I Natiqlik Müsabiqəsi həyata keçirildi. Müsabiqənin 3 gün davam edən yarımfinal və final mərhələləri Bankın Baş ofisinin tədbir zalında baş tutdu. 
+    <br><br>
+    30 yaşadək gənc hüquqşünaslar seçdikləri və İnsan hüquqlarını əhatə edən mövzularda 10 dəqiqəlik çıxışlar etdilər. Aralarında Yelo Bank hüquqşünaslarının da yer aldığı münsiflər heyəti iştirakçıları mövzuya hakimlik, natiqlik qabiliyyəti, bədən dili, məzmun, analiz və s. keyfiyyətlərə görə dəyərləndirdilər. Münsif xallarına əsasən yarımfinalda ən yüksək xalı toplamış 7 gənc finala keçmək hüququ qazandı. Final 28 May Müstəqillik günü baş tutdu. Azərbaycan dövlət himninin səsləndirilməsi ilə başlayan final mərhələsinin iştirakçıları bu dəfə eyni mövzuda təsdiq və ya inkar mövqeyində yarışdılar. Çıxışların yekununda münsiflər heyətinin verdikləri xala görə 3 ən yaxşı natiq müəyyənləndirilərək qalib seçildi. Hər 3 qalibə sertifikatlar, pul mükafatı və kubok təqdim olundu.
+    <br><br>
+    Yelo Bank Korporativ Sosial Məsuliyyət layihələrini ərsəyə gətirərkən gənclərin fərdi inkişafı və işgüzarlıq qabiliyyətinin artırılmasına xüsusi diqqət edir. Bank il sonunadək cəmiyyətimizə daha çox fayda verəcək digər layihələrin də həyata keçirilməsini planlaşdırır.
+    <br><br> 
+    Bank xidmətləri, o cümlədən, kredit sifarişi haqqında əlavə sualınız var? O zaman 981 nömrəsinə zəng edin və ya Facebook, Instagram  və ya Whatsapp hesablarımıza yazın.
+    <br><br>
+    Yelo Bank – Parlaq bankçılıq!;
+
+    id: 3;
+    title: Yelo Bankda “Uşaqlar Günü” təşkil edildi;
+    slug: yelo-bankda-usaq-gunu-teskil-edildi;
+    date: 31 May 2022;
+    description: 1 İyun Uşaqların Müdafiəsi günü ilə əlaqədar Yelo Bank uşaqlar üçün əyləncə, bilik və yeni tanışlıqlarla dolu xüsusi gün təşkil etdi. Tədbir Bank-ın baş ofisində həyata keçirildi. Masterklassla başlayan tədbirdə mütəxəssisin iştirakı ilə uşaqlara bitkilər haqqında məlumat, onların əkilməsi və düzgün qulluq qaydaları öyrədildi. Daha sonra uşaqların yaradıcı potensialının kəşfi üçün bitkilərə ad verdilər və dibçəkləri boyadılar. 
+    <br><br>
+    Masterklassın ardınca tədbirin əyləncə hissəsi baş tutdu. İstirahət otağında yemək fasiləsindən sonra Bankın tədbir zalında uşaqlar üçün cizgi filmi nümayiş etdirildi. Sonda tədbirdə iştirak etmiş bütün uşaqlara sertifikat və hədiyyələr təqdim edildi.
+    <br><br>
+    Yelo Bank-ın müasir və rahat baş ofisi işləmək, istirahət, eyni zamanda tədbirlərin təşkili üçün geniş imkanlar yaradır. Bank sahib olduğu imkanları hərtərəfli dəyərləndirərək müxtəlif tədbirlərin həyata keçirilməsinə davam edəcək. 
+    <br><br>
+    Bank xidmətləri, o cümlədən, onlayn kredit haqqında əlavə sualınız var? O zaman 981 nömrəsinə zəng edin və ya Facebook, Instagram  və ya Whatsapp hesablarımıza yazın.<br>
+    1 İyun Uşaqların Müdafiəsi günü ilə əlaqədar Yelo Bank uşaqlar üçün əyləncə, bilik və yeni tanışlıqlarla dolu xüsusi gün təşkil etdi. Tədbir Bank-ın baş ofisində həyata keçirildi. Masterklassla başlayan tədbirdə mütəxəssisin iştirakı ilə uşaqlara bitkilər haqqında məlumat, onların əkilməsi və düzgün qulluq qaydaları öyrədildi. Daha sonra uşaqların yaradıcı potensialının kəşfi üçün bitkilərə ad verdilər və dibçəkləri boyadılar. 
+    <br><br>
+    Masterklassın ardınca tədbirin əyləncə hissəsi baş tutdu. İstirahət otağında yemək fasiləsindən sonra Bankın tədbir zalında uşaqlar üçün cizgi filmi nümayiş etdirildi. Sonda tədbirdə iştirak etmiş bütün uşaqlara sertifikat və hədiyyələr təqdim edildi.
+    <br><br>
+    Yelo Bank-ın müasir və rahat baş ofisi işləmək, istirahət, eyni zamanda tədbirlərin təşkili üçün geniş imkanlar yaradır. Bank sahib olduğu imkanları hərtərəfli dəyərləndirərək müxtəlif tədbirlərin həyata keçirilməsinə davam edəcək. 
+    <br><br>
+    Bank xidmətləri, o cümlədən, onlayn kredit haqqında əlavə sualınız var? O zaman 981 nömrəsinə zəng edin və ya Facebook, Instagram  və ya Whatsapp hesablarımıza yazın.
+    <br><br>
+    Yelo Bank – Parlaq bankçılıq!;
+    
+    id: 4;
+    title: Yelo Bank-dan illik 5%-lik kreditlə biznesinizi böyüdün;
+    slug: yelo-bank-dan-illik-5-lik-kreditl-biznesinizi-boyudun;
+    date: 26 May 2022;
+    description: Sahibkarlığın inkişafına və maliyyələşməsinə hər zaman dəstək olan Yelo Bank real sektorun inkişafı istiqamətində geniş imkanlar yaradır. Belə ki, Bank Sahibkarlığın İnkişafı Fondu (SİF) ilə əməkdaşlıq çərçivəsində illik 5%-dən başlayan biznes kreditləri təklif edir. 
+    <br><br>
+    Fondun vəsaiti hesabına Yelo Bank-dan 10 milyon manatadək biznes kreditini illik cəmi 5% ilə əldə etmək mümkündür. Əlavə olaraq, kredit götürmüş sahibkarlar kredit müddətinin yarısınadək güzəşt müddəti üstünlüyündən də faydalana bilər.
+    <br><br>
+    Qeyd edək ki, Yelo Bank 2022-ci ilin ilk rübü üzrə Sahibkarlığın İnkişafı Fondunun (SİF) vəsaitləri hesabına verilən kreditlərin sayına görə müvəkkil banklar arasında ilk 5-likdə qərarlaşıb. Aprel ayının sonunadək Yelo Bank böyük əksəriyyəti regionlar, xüsusilə də kənd təsərrüfatı olmaqla, real sektorun inkişafına 2.3 milyon manat güzəştli kredit verib. Ümumilikdə isə bu dövr ərzində Bank bizneslərin maliyyələşməsinə 110.5 milyon manat kredit ayırıb.
+    <br><br>
+    Sifariş üçün istənilən filiala yaxınlaşa və ya linkə keçid edə bilərsiniz: https://bit.ly/yltrhgs
+    <br><br>
+    Bank xidmətləri (kredit, kart, depozit, mobil əlavə və s.) haqqında əlavə sualınız var? O zaman 981 nömrəsinə zəng edin və ya Facebook, Instagram və ya Whatsapp hesablarımıza yazın cavablandıraq!
+
+    <br><br><br>
+    Yelo Bank – Parlaq bankçılıq!;
+
+    id: 5;
+    title: Yelo Bank-dan illik 11.5%-dək qazandıran yeni təklif;
+    slug: yelo-bankdan-qazandiran-teklif;
+    date: 26 May 2022;
+    description: Yelo Bank-ın yeni əmanət faizini qaçırmayın! İndi Yelo Sabit əmanətindən daha yüksək gəlir əldə edə bilərsiniz. Belə ki, manat ilə 18 və 24 ay müddətlərinə yerləşdirilən əmanətlərə illik 11.5% gəlir təklif olunur. Əmanətiniz Bankda etibarlı qorunmaqla yanaşı, həm də qarşıdakı illərdə maliyyə təminatçınız olacaq.
+    <br><br>
+    Əmanətləri 24 ayadək müddətə yerləşdirmək mümkündür və müddətin uzadılması avtomatikdir. Əmanət hesabı açmaq üçün tələb olunan minimal məbləğ 100 AZN-dir. Üstəlik, əmanət gəlirlərini necə alacağınızı özünüz seçirsiniz - istər müddətin sonunda, istərsə də hər ay kart vasitəsi ilə.
+    <br><br>
+    Qeyd edək ki, Yelo Bank-da yerləşdirilmiş əmanətlər Əmanətlərin Sığortalması fondunun qaydalarına uyğun olaraq sığortalanır.
+    <br><br>
+    Bankın təklif etdiyi əmanət şərtləri hər kəsin ürəyincədir. Təsadüfi deyil ki, ötən il depozit portfelinin artımına görə banklar arasında ən yüksək dinamika (50%) Yelo Bank-da müşahidə olunub. Bankın hazırda depozit portfeli 500 milyon manata yaxınlaşır.
+    <br><br>
+    Ətraflı məlumat üçün: https://bit.ly/ylths 
+    <br><br> 
+    Bank xidmətləri, o cümlədən, əmanət faizləri haqqında əlavə sualınız var? O zaman 981 nömrəsinə zəng edin və ya Facebook, Instagram  və ya Whatsapp hesablarımıza yazın.
+    <br><br>
+    Yelo Bank – Parlaq bankçılıq!;
+
+    id: 6;
+    title: SİMA üzrə yeni tərəfdaş olduq!;
+    slug: yelo-bank-sima;
+    date: 26 May 2022;
+    description: Rəqəmsal İnkişaf və Nəqliyyat Nazirliyinin tabeliyində fəaliyyət göstərən “AzInTelecom” MMC tərəfindən yaradılan SİMA – bulud əsaslı yeni nəsil rəqəmsal imzanın tərəfdaş qurumların sistemlərinə inteqrasiya prosesi davam edir. Proses üzrə növbəti tərəfdaş qurum Yelo Bank oldu. Tərəfdaşlığa əsasən Yelo Bank-ın müştəriləri Yelo mobil tətbiqindən artıq SİMA imza ilə qeydiyyatdan keçə bilərlər. 
+    <br><br>
+    Rəqəmsal imzanı əldə etmiş müştərilər növbəti mərhələdə bank xidmətləri üçün onlayn müraciət etdikdə, bütün sənədləri SİMA ilə imzalaya biləcək. Bununla da vətəndaşlar SİMA-nın üstünlüklərindən istifadə edərək banka gəlmədən, zaman itkisinə yol vermədən Bankın müxtəlif məhsullarını əldə edə biləcəklər.
+    <br><br>
+    SİMA vasitəsilə bank xidmətləri ilə yanaşı, digər sahələr üzrə də elektron xidmətlərdən yararlanmaq mümkündür. Bunlara rəqəmsal dövlət, BOKT, sığorta, mobil operatorlar, elektronika, məişət, TV və internet provayderlər, bir sözlə imza tətbiq olunan bütün sahələr daxildir.
+    <br><br>
+    Yeni nəsil rəqəmsal imzanın həm vətəndaşlar, həm də xidmət təklif edənlər üçün bir sıra üstünlükləri var. Bunlara maliyyə xərclərinin azaldılması və vaxt itkisinin qarşısının alınması daxildir. Eyni zamanda, SİMA-nın istənilən sistemə inteqrasiya oluna bilməsi, eləcə də avtomatlaşdırılma istifadəçilərə sürətli və istənilən sayda imzalama imkanı qazandırır.
+    <br><br>
+    Mobil tətbiqlə işləyən imzanı əldə etmək üçün SİMA tətbiqini mobil cihaza yükləmək və bir dəfə qeydiyyatdan keçmək kifayətdir. Rəqəmsal xidmətlərə əlçatanlığı artıran imzanın ölkəmizdə biznes proseslərini sürətləndirəcəyi gözlənilir. SİMA rəqamsal imza ilə bağlı daha ətraflı məlumatı şirkətin rəsmi saytından və 157 Çağrı Mərkəzi ilə əlaqə saxlayaraq əldə edə bilərsiniz. ;
+
+    id: 7;
+    title: Müştərilərin nəzərinə;
+    slug: musterilerin-nezerine-1;
+    date: 25 May 2022;
+    description: Dəyərli müştərilər,
+    <br><br>
+    Məlumat üçün bildiririk ki, “Yelo Bank” ASC-nin iki filialı barəsində aşağıdakı dəyişikliklər həyata keçirilmişdir:
+    <br><br>
+    Bakı şəh., Şəmsi Bədəlbəyli küç., 102 ünvanında yerləşən “28 May” filialının Bakı şəh., Şəmsi Bədəlbəyli küç., 92 ünvanına köçürülmüş;<br>
+    Bakı şəh., Şəmsi Bədəlbəyli küç ., 92 ünvanında yerləşən “3 saylı” filial Bakı şəh., Şəmsi Bədəlbəyli küç., 102 ünvanına köçürülərək “Mərkəz” filialı adlandırılmışdır.;
+
+    id: 8;
+    title: Yelo Bank-da “Women's sharing circle” layihəsi baş tutdu;
+    slug: yelo-bankda-women-sharing-circle-layihesi-bas-tutdu;
+    date: 5 May 2022;
+    description: Yelo Bank-da DanceAbility Azərbaycan şirkətinin “Women’s sharing circle” adlı sosial layihəsi həyata keçirildi. Layihə müxtəlif yaşda, fərqli peşə sahibləri, sağlamlıq imkanları məhdud olan və olmayan qadınları bir araya gətirdi. “Women’s sharing circle” qadınların paylaşmaq, dincəlmək və bir-birini dəstəkləmək üçün toplaşdığı təhlükəsiz məkan deməkdir. Heç bir tənqid edilmədiyi və mühakimə aparılmadığı bu dairədə iştirakçı xanımlar kənar dünyadan, sosial şəbəkələrdən bir müddətlik uzaq qalmaqla rahat və özləri kimi oldular.<br>
+    Görüş iştirakçı xanımların özlərini ifadə etməsi və bir-birilərini tanıması ilə başladı. Paylaşma dairəsində meditasiya, “Moving Bodies, “DanceAbility” və “Ecstatic Awakening Dance” kimi müxtəlif bədən yönümlü texnikalardan istifadə edildi. Proqram qeyd olunan texnikalar üzrə baş müəllim Nigar Sultanovanın mentorluğu ilə keçirildi.<br>
+    Proqramın əsas məqsədi qadınları gücləndirmək, sağlamlığı və rifahı naminə seçim etmək üçün imkan yaratmaqdır. Proqram eyni zamanda zehni, emosional və fiziki sağlamlığın inkişafını da dəstəkləməyi hədəfləyir.
+    <br><br><br>
+
+    Bank xidmətləri (kredit, kart, depozit, mobil əlavə və s.) haqqında əlavə sualınız var? O zaman 981 nömrəsinə zəng edin və ya Facebook, Instagram  və ya Whatsapp hesablarımıza yazın cavablandıraq!
+
+    <br><br><br>
+    Yelo Bank – Parlaq bankçılıq!;
+
+    id: 9;
+    title: Yelo Bank bayram ərəfəsində şəhid ailələrini ziyarət etdi;
+    slug: yelo-bank-sehid-ailelerini-ziyaret-etdi;
+    date: 29 Aprel 2022;
+    description: Yelo Bank Vətənimizin ərazi bütövlüyü naminə döyüşmüş, torpaqlarımız uğrunda şəhid olmuş hərbçilərimizə və onların ailələrinə dəstək göstərməyi özünün vətəndaşlıq və insanlıq borcu hesab edir. Bu dəfə Bank müqəddəs Ramazan bayramı münasibətilə Qarabağ uğrunda döyüşlərdə şəhid olan qəhrəmanlarımızın ailələrinə dəstək oldu. 
+    <br><br>
+    Xocavənd rayonu Qızıl Aypara Cəmiyyəti ilə birlikdə şəhidlərimizin əmanəti olan ailələrə bayramqabağı ziyarət edildi. Bankın və Cəmiyyətin birgə maliyyə dəstəyi ilə hazırlanmış bayram sovqatlarından ibarət bağlamalar onlara təhvil verildi. 
+    <br><br>
+    Xatırladaq ki, Yelo Bank korporativ sosial məsuliyyəti çərçivəsində şəhid ailələri və qazilərimizə həssaslıqla yanaşır və Qarabağ döyüşlərinin ilk günlərindən bu istiqamətdə çoxsaylı layihələr həyata keçirir.;
+
+    id: 10;
+    title: Bankımızda Autizm Günü təşkil edildi;
+    slug: bankimizda-autizm-gunu-teskil-edildi;
+    date: 28 Aprel 2022;
+    description: Aprel ayı dünyada Autizm Maarifləndirmə ayı kimi geniş qeyd edilir. Autizmə diqqət və dəstək məqsədli ardıcıl layihələr həyata keçirən Bankımız bu dəfə qapılarını “Birgə və Sağlam” İctimai Birliyinə açdı. Baş ofisdə təşkil edilmiş Autizm günü çərçivəsində təşrif buyuran autizm spektrli uşaqlar adi iş gününə fərqli atmosfer qatdılar.
+    <br><br>
+    Qonaqlar Baş ofisdəki iş mühiti və kollektivlə tanış oldular. Daha sonra birliyin nəzdində fəaliyyət göstərən “Kashalata Café” tərəfindən yeməkxanamızda şirniyyat yarmarkası həyata keçirildi. Autizm sindromlu gənclərin hazırladığı müxtəlif şirniyyatlar əməkdaşlarımızın böyük marağına səbəb oldu.
+    <br><br>
+    Qonaqlar Bankımıza xüsusi sürpriz də hazırlamışdılar: yarmarkanın ardınca tədbir zalımızda birliyin “Mavi Ürəklər” xor qrupu konsert proqramı ilə çıxış etdi. İstedadlı qrup üzvlərinin çıxışları tədbirin axarına xüsusi rəng qatdı. Konsertdə ifa zamanı əməkdaşlarımız da qrup üzvlərini müşahidə etdilər. Tədbirdə Yelo Bankın İdarə Heyəti sədrinin müavini Günay Cəlilova və Birliyinin sədri Aytən Eynalova söz alaraq autizmli şəxslərin cəmiyyətə adaptasiyasını dəstəkləmək üçün bu kimi layihələrin nə qədər önəmli olduğunu vurğuladılar.
+    <br><br>
+    Bankımız cəmiyyətdə autizm sindromlu uşaqlara tolerantlığı artırmaq məqsədilə davamlı təşviqat və təbliğat layihələri həyata keçirəcək. Bu cür sosial təşəbbüslərdə əsas məqsədimiz autizmə fərqlilik, eyni zamanda bərabərlik kimi yanaşmanı aşılamaqdır. 
+    <br><br>
+    Qeyd edək ki, bu, ay ərzində autizmə dəstək məqsədilə keçirilmiş 2-ci layihəmizdir. Əvvəlki layihə çərçivəsində autizm spektrli və digər fiziki imkanları məhdud uşaqlarla birgə quş yuvaları düzəldərək şəhərimizin müxtəlif parklarında yerləşdirdik.;
+    
+    id: 11;
+    title: Yelo Bank-ın əmanət portfeli 100 milyon artıb;
+    slug: emanet-portfeli-100-milyon-artib;
+    date: 26 Aprel 2022;
+    description: Yelo Bank 2022-ci ilin birinci rübü üzrə maliyyə hesabatını açıqladı. Bank əsas maliyyə göstəriciləri üzrə pozitiv artım dinamikasını qorumaqla ilə parlaq şəkildə başlayıb. Bankın cəmi aktivləri ötən ilin sonu ilə müqayisədə 145 milyon, yəni 27% artaraq 678 milyon manatı ötüb.
+    <br><br>
+    Bank kredit portfeli üzrə də uzun müddətdir ki, artım tendensiyasını qoruyub saxlayır. Belə ki, 2021-ci ilin sonu ilə müqayisədə kredit portfeli 26 milyon manat artaraq 472 milyon manata çatıb. Hesabat dövrü ərzində Bank real sektorun maliyyələşməsinə 77 milyon manat kredit ayrılıb.
+    <br><br>
+    İlk rüb ərzində 4000-ə yaxın müştəriyə 27 milyondan çox istehlak krediti verilib və nəticədə bu istiqamət üzrə kredit portfeli 8 milyon artaraq 119 milyon manata çatıb. Bu satışın demək olar ki, 30%-i onlayn kanallar vasitəsilə həyata keçirilib.
+    <br><br>
+    Bu dövr üzrə əmanət portfelində də 100 milyon manatlıq 28% artım müşahidə olunur. Bunun fiziki şəxslərin əmanətləri hesabına baş verməsi müştərilərin Yelo Bank-a inamının da artmasını göstərir. Belə ki, 2022-ci ilin ilk 3 ayı ərzində 1200-dən çox müştəri öz əmanətlərini Yelo Bank-a etibar edib və Bankın əmanət portfeli 452 milyon manatı ötüb.
+    <br><br>
+    Eyni zamanda hesabat dövrü üzrə Bankın xalis faiz gəlirləri 12 milyon manat olub. Bu da ötən ilin analoji dövrü ilə müqayisədə 20% artım deməkdir. Qeyd edək ki, Bank 3.4 milyon kredit ehtiyatı yaradaraq rübü 345 min manat mənfəət ilə tamamlayıb. İlk rüb üzrə qeyri-faiz gəlirləri 1.3 milyondan çox olub ki, bu da ötən ilin eyni dövrü üzrə müqayisədə 2 dəfədən çox artım deməkdir. 
+    <br><br>
+    Bank-ın məcmu kapitalı 89 milyon manat təşkil edib ki, bu da requlyativ tələbdən 39 milyon manat çoxdur. Məcmu kapitalın adekvatlıq əmsalı 14.61%, birinci dərəcəli kapitalın adekvatlıq əmsalı isə 9.33% olmaqla, hər iki göstərici üzrə tələb olunan normanı üstələyir.
+    <br><br>
+    Yelo Bank-ın İdarə Heyətinin sədri Anar Həsənov 1-ci rübün maliyyə nəticələrini belə şərh edib: "Bankımızın həm ötən il, həm də bu ilin ilk ayları üzrə nəticələrinə baxdıqda inkişaf strategiyamız üzrə düzgün irəlilədiyimizə bir daha əmin oluram. Təbii ki, bu nəticələr peşəkar komandamız və müştərilərimizin artan etibarı olmadan reallaşa bilməzdi. 2022-ci ilə hədəflərimizə uyğun start vermişik. Bu il müştərilərimizin həyatını rahatlaşdıracaq daha bir neçə yeni rəqəmsal məhsullarımızı istifadəyə verməyi və xüsusilə regional istiqamətdə xidmət şəbəkəmizi genişləndirməyi nəzərdə tutmuşuq."
+    <br><br>
+    Qeyd edək ki, Bank 2022-ci ilin ilk rübü ərzində Salyanda və Ağcabədidə olmaqla artıq 2 yeni regional filialını istifadəyə verib.;
+
+    id: 12;
+    title: Azərpoçt MMC ilə ATM paylaşım;
+    slug: azerpoct-atm-paylasim;
+    date: 22 Aprel 2022;
+    description: Dəyərli Yelo müştəriləri,
+    <br><br><br>
+
+    Sizin rahatlığınız üçün hər zaman yeni həll yolları tapmağa çalışırıq. Daha bir yeniliyi sizinlə bölüşmək istəyirik. Azərpoçt MMC ilə bankomatların paylaşım razılaşması imzalanıb. Beləliklə artıq Yelo kartlarınız vasitəsilə Azərpoçt ATM və ofislərində aparacağınız əməliyyatları aşağıdakı tariflərlə edə bilərsiniz:
+
+    <br><br><br>
+    Tariflər
+
+    <br><br><br>
+    ATM siyahısı ilə tanış olmaq üçün keçid edin.;
+
+    id: 13;
+    title: Yelo Bank reabilitasiya mərkəzindəki uşaqlarla birgə quşlar üçün yuvalar hazırladı;
+    slug: xeyriyye-aksiya-kecirildi;
+    date: 20 Aprel 2022;
+    description: Aprel ayı Autizm Maarifləndirmə ayı kimi qeyd edilir. Bu münasibətlə Yelo Bank-ın və “GID CSR Consulting”in birgə təşəbbüsü ilə növbəti sosial tədbir həyata keçirilib. "Balaca əllərlə rəngli yuvalar" adlı tədbir 2 nömrəli Uşaq Reabilitasiya Mərkəzində baş tutub. Layihənin əsas məqsədi Mərkəzdə müalicə alan uşaqlara erkən yaşlarından təbiətdəki dostlarımıza qarşı mərhəmət, sevgi hisslərini aşılamaqdır. 
+    <br><br>
+    Tədbir autizm spektrli və sağlamlıq imkanları məhdud uşaqlarla iş üzrə ixtisaslaşmış psixoloqun interaktiv təlimi ilə başladı və daha sonra quşlar üçün yuvaların qurulması ilə davam etdi. Yekunda uşaqlara Yelo Bank tərəfindən sertifikat və hədiyyələr təqdim olundu. Uşaqların imzası ilə tamamlanmış quş evlərindən bir neçəsi Reabilitasiya Mərkəzinin bağçasındakı ağaclarda yerləşdirildi, digərlərini isə tezliklə Bakı şəhərindəki digər park ərazilərində görə biləcəksiniz.
+    <br><br>
+    Xatırladaq ki, bu, Yelo Bank-ın sahibsiz heyvanların qayğısı üçün həyata keçirdiyi ilk sosial layihə deyil. Bundan öncə bank əməkdaşlarının övladları pişik evləri hazırlamış və küçə heyvanlarının xüsusiyyətləri ilə  və onlara düzgün rəftarla bağlı interaktiv təlimdə iştirak etmişdi. Hazırda pişik evləri müxtəlif ictimai-iaşə obyektlərinin qarşısında yerləşdirilib. 
+    <br><br>
+    Yelo Bank autizmli və sağlamlıq imkanları məhdud olan uşaqlar üçün daha gözəl bir mühitin formalaşdırılması naminə sosial layihələrinə davam edəcək.
+    <br><br>
+    Əlavə sualınız var? O zaman 981 nömrəsinə zəng edin və ya Facebook, Instagram  və ya Whatsapp hesablarımıza yazın cavablandıraq!  
+    <br><br>
+    Yelo Bank – Parlaq bankçılıq! ;

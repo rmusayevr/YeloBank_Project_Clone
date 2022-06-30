@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+    {% block title %}
+      <title>Yelo Bank - Müasir Bank Xidmətləri</title>
+    {% endblock %}
+    {% block css%}
+      <link rel="stylesheet" href="{{ url_for('static', filename = 'CSS/cards.css')}}">
+    {% endblock %}
+    {% block navbar %}
+    {% endblock %}
+    {% block content %}
+    <div class="w-100 not-menu-main">
+        <div class="container-content">
+            <div class="container-header">
+                <h1 class="h1 font-weight-bold">Kartlar</h1>
+                <p class="text-secondary h5">Online kart sifarişi xidməti: İndi siz evdən çıxmadan plastik kart sifariş edə bilərsiniz. Yelo Bankın təqdim etdiyi plastik kartlar ilə üstünlüklərdən yararlanmaq üçün tələsin. İstənilən yerdə istifadəsinin rahatlığı və üstünlükləri ilə Yelo Bank hesab kartları hər kəsin ürəyincə olacaq.</p>
+            </div>
+            {% for card in cards %}
+                <div class="card mt-5  card-cards ">
+                    <div class="left">
+                        <div class="card-name">
+                            <h1>{{ card.card_name }}</h1>
+                            <p>{{ card.description }}</p>
+                        </div>
+                        <div class="data">
+                            <div>
+                                <p>{{ card.duration }}</p>
+                                <p>{{ card.duration_v }}</p>
+                            </div>
+                            <div>
+                                <p>{{ card.currency}}</p>
+                                <p>{{ card.currency_v }}</p>
+                            </div>
+                            <div>
+                                <p>{{ card.cahsback }}</p>
+                                <p>{{ card.cashback_v }}</p>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <button class="order"><a href="{{ url_for('card', id = card.id) }}#order-card" class="text-decoration-none">
+                                Sifariş et</a>
+                            </button>
+                            <button class="details"><a href="{{ url_for('card', id = card.id) }}" class="text-secondary text-decoration-none h5 font-weight-bold">  
+                                Daha ətraflı <span class="arrow">&#8594;</span></a> 
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-flip-container">
+                        <div class="wrap">
+                            <span class="t-over"></span>
+                            <span class="t-over"></span>
+                            <span class="t-over"></span>
+                            <span class="t-over"></span>
+                            <span class="t-over"></span>
+                            <span class="t-over"></span>
+                            <span class="t-over"></span>
+                            <span class="t-over"></span>
+                            <span class="t-over"></span>
+                            <img src="{{ card.card_img }}" alt="" class="tilt-box w-100">
+
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="m-auto mt-5 text-secondary text-justify " style="width: 65%; margin-top: 50px !important;">
+            <p class="h6 font-weight-light ">Həm xərclədikcə qazanmaq, həm də kartdakı pulunuza pul gəlsin istəyirsiniz? Hansı plastik kartı seçəcəyinizə əmin
+                deyilsinizsə, Yelo Bank-dan Yelo Kartları qarşılayın!
+        
+                Yelo Kartla xərclərinizə baxışınızı dəyişəcəksiniz. Yelo kartla rahat pul xərcləyəcəksiniz, xərclədikcə
+                xərclərinizdən cashback qazanacaqsınız, kartınızın hesabını və bonuslarınızı rahatlıqla izləyəcəksiniz, online
+                kart sifarişi edib, kartı əldə etdikdən sonra Yelo Karta görə partnyor mağazalarda endirim alacaqsınız. Təkcə
+                kartın dizaynı çox şey deyir. Stereotipləri kartın dizaynında qırdıq və şaquli kart yaratdıq. Bu kartla kassada
+                hər kəsin diqqətini özünüzdə cəmləyəcəksiniz. Yelo Kart təkcə şaquli dizaynı ilə seçilmir, həmçinin kartın
+                kənarının da fərqli rənginə görə pulqabınızda dərhal digər kartlardan seçiləcək! Kartın müddəti 3 ildir və kartı
+                pulsuz əldə etmək seçiminiz də var. Kart Sifarişi zamanı üç valyutadan istənilən birini bilərsiniz.
+                <span id="span1">... <span id="span2">Daha çox</span></span> <span id="span3" class="display-none">Yelo Premium kartı isə premium üstünlüklər deməkdir. Yüksək imtiyazlar verən Yelo Premium
+                    Kartla nəinki ölkədaxili, həm də ölkəxaricində də eksklüziv imkanlara sahib olacaqsınız. Harda olmağınızdan
+                    asılı olmayaraq Yelo Premium kartı sizi xüsusi hiss etdirməklə yanaşı gəlirinizə gəlir gətirəcək! Yelo Kartı
+                    istənilən Yelo Bank ATM-lərin komissiyasız nağdlaşdıra bilirsiniz. Geniş partnyor şəbəkəsindən 30%-dək
+                    cashback əldə etməklə cibinizi sevindirəcəksiniz! Yelo kart təmassız ödəniş funksionallığını dəstəkləyir.
+                    Kartla daha çox xərcləyin, daha çox qazanın! Online kart sifarişi xidməti ilə kartı əldə etmək imkanınız
+                    var. Yelo kartla aylıq ən azı 300 AZN və ya ekvivalentində pul xərcləyərək (onlayn və POS terminallarda
+                    alış-veriş əməliyyatları zamanı) bir çox əlavə üstünlüklər qazanmış olursunuz!
+                    Yelo Bank-dan nəinki debet kart, həm də Yelo Kredit kart sifarisi edə bilərsiniz. Yelo Grace Light kart ilə
+                    hər ay yalnız hesablanmış faizlər ödəməklə 10 000 AZN-ə dək kredit almaq imkanınız var. Üstəlik bu kartla bu
+                    gün xərcləyib, nə az, nə çox, 45 gün xərciniz barədə düşünməyə bilərsiniz. Kartla xərclənmiş vəsait üçün 45
+                    gün güzəşt müddəti mövcuddur. Kartın növündən asılı olmayaraq hesabınıza 24/7 pulsuz Yelo App-də baxa bilə
+                    və bir çox ödəniş və köçürmələrinizi həyata keçirə bilərsiniz. Yelo Kart əldə etmək istəyirsiniz, lakin
+                    banka yaxınlaşmağa vaxtınız yoxdur? problem deyil, istənilən zaman istənilən yerdə onlayn kart sifarişi verə
+                    bilərsiniz! İndi siz haradan kart sifarişi edəcəyinizi yaxşı bilirsiniz. </span>
+            </p>
+        </div>
+        <div class="container">
+            <h4>
+            Storilər
+            <span class="badge rounded-circle text-bg-warning text-light">
+            3
+            </span>
+            </h4>
+            <div class="d-flex justify-content-between">
+                {% for story in stories %}
+                <div class="card {{ story.text_bg }} mb-3 border rounded-4">
+                    <div class="card-body">
+                    <span class="badge rounded-pill text-bg-light {{ story.text }}">{{ story.title }}</span>
+                    <p class="card-text">{{ story.description }}</p>
+                    </div>
+                    <img src="{{ story.img }}" class="card-img" alt="...">
+                    <a href="#" class="full_link"></a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+      
+    {% endblock %}
+    {% block footer %}
+    {% endblock %}
+    
+    {% block js %}
+    <script src="{{ url_for('static', filename = 'JavaScript/cards.js')}}"></script>
+    {% endblock %}

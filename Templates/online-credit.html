@@ -1,0 +1,133 @@
+{% extends 'base.html' %}
+{% block title %}
+<title>Kredit</title>
+{% endblock %}
+{% block css%}
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'CSS/online-credit.css')}}">
+{% endblock %}
+{% block navbar %}
+{% endblock %}
+{% block content %}
+<div class="w-100 not-menu-main">
+  <div class="body">
+    <h1>Online kredit sifarişi</h1>
+    <div class="container mt-5 containerX" style="width: 45% !important;">
+      <form action="/az/individuals/online-services/loan_request/" method="POST">
+        {{form.csrf_token}}
+        <div class="sliders">
+          <div>
+            <p class="text-muted" style="padding-left: 10px;">Aylıq əməkhaqqı</p>
+            <div class="money">
+              <output class="bold" id="salary" style="padding-left: 10px;">2500</output>
+              <p>AZN</p>
+            </div>
+            {{form.salary}}
+          </div>
+          <div>
+            <p class="text-muted" style="padding-left: 10px;">Kreditin Məbləği</p>
+            <div class="money">
+              <output class="bold" id="amount" style="padding-left: 10px;">15000</output>
+              <p>AZN</p>
+            </div>
+            {{form.credit}}
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6 mb-4">
+            {{form.name(class="form-control border")}}
+          </div>
+          <div class="form-group col-md-6">
+            {{form.surname(class = "form-control border" )}}
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            {{form.work_place(class = "form-control border")}}
+          </div>
+          <div class="form-group col-md-3">
+            {{form.prefix(class = "form-control border")}}
+          </div>
+          <div class="form-group col-md-3 ">
+            {{form.mobile_number(class = "form-control border ")}}
+          </div>
+        </div>
+        <hr class="mt-5">
+        <div class="form-row ">
+          <p class="col-md-2 fa text-secondary d-flex align-items-center justify-content-center">&#xf00c;</p>
+          <p class="col-md-7">“Sifariş et” basmaqla Azərbaycan Kredit Bürosundan kredit tarixçəsi və Asan finansdan fərdi
+            məlumatların alınmasına razılıq verirəm.</p>
+          <button type="submit" class="btn btn-warning col-md-3 ">Sifariş et</button>
+        </div>
+      </form>
+    </div>
+    <div class="container2 mt-5">
+      <div class="row d-flex flex-row justify-content-center">
+        <div class="left col-5 d-flex flex-column justify-content-between">
+          <h2>Mobil tətbiqi indi yüklə və tam onlayn kredit əldə et</h2>
+          <p class="text-muted">Yelo App-də onlayn kredit sifarişi və bir çox üstünlüklər səni gözləyir. Banka gəlmədən
+            kredit almaq istəyirsənsə, Yelo app-də sənin üçün təcili kredit almaq imkanı var. </p>
+          <div class="download">
+            <a href="https://apps.apple.com/az/app/yelo/id1515449668">
+              <img src="https://cdn.suretkargo.az/assets/img/aps.png" alt="">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=az.yelo.app&hl=ru">
+              <img src="https://cdn.suretkargo.az/assets/img/pls.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="right col-2 ">
+          <div class="yellowImg d-flex justify-content-center align-items-center">
+            <img src="https://www.yelo.az/site/templates//images/qr_code.svg" style="height: 250px; width: 250px;" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottomText  text-center d-flex justify-content-center align-items-center m-auto flex-column">
+      <p class="text-muted">Onlayn kredit müraciəti artıq daha asandır. İndi, olduğunuz yeri tərk etmədən internet
+        vasitəsi ilə kredit sifariş edə bilərsiniz. Sifariş etmək üçün ilk öncə aylıq əməkhaqqınızı və istədiyiniz kredit
+        məbləğini, daha sonra isə tələb olunan digər məlumatları (adınızı, soyadınızı, iş yerinizi və əlaqə nömrənizi)
+        qeyd etməyiniz kifayətdir.</p>
+      <p class="text-muted">Artıq Yelo Bankdan kredit götürmək çox asan və tezdir. İndi Yelo app-i yükləyin və bank
+        krediti sürətlə əldə edin. Sizə uyğun olan ən sərfəli şərtlərlə və aşağı faizlə online kredit sifarişi ilə evdən
+        çıxmadan kredit əldə etmək fürsətindən istifadə edin! Onlayn istehlak krediti sifarişi xidmətimiz aktivdir. Bundan
+        başqa Daşınmaz əmlak girovlu kredit, Əmanət təminatlı kredit və ya İpoteka krediti məhsullarımızla biz
+        müştərilərimizə dəstək olmağa hazırıq.</p>
+      <p class="text-muted">Siz Yelo Bankın saytında başqa kredit növləri ilə də tanış ola bilərsiniz. İstənilən online
+        kredit sifarişi üçün bankımızın sosial media və digər kommunikasiya kanalları ilə müraciət edə bilərsiniz. Sizə
+        tecili kredit lazımdırsa, onlayn kredit sifarişi müraciətinizə tez bir zamanda cavab veriləcəyindən əmin ola
+        bilərsiniz.</p>
+    </div>
+  
+    <div class="container">
+      <h4>
+        Storilər
+        <span class="badge rounded-circle text-bg-warning text-light">
+        3
+        </span>
+      </h4>
+      <div class="d-flex justify-content-between">
+          {% for story in stories %}
+            <div class="card {{ story.text_bg }} mb-3 border rounded-4">
+                <div class="card-body">
+                <span class="badge rounded-pill text-bg-light {{ story.text }}">{{ story.title }}</span>
+                <p class="card-text">{{ story.description }}</p>
+                </div>
+                <img src="{{ story.img }}" class="card-img" alt="...">
+                <a href="#" class="full_link"></a>
+            </div>
+          {% endfor %}
+      </div>
+    </div>
+    
+  
+  
+    {% endblock %}
+    
+    {% block footer %}
+    {% endblock %}
+  
+    {% block js %}
+      <script src="{{url_for('static', filename = 'JavaScript/online-credit.js')}}"></script>
+    {% endblock %}
+  </div>
+</div>

@@ -1,0 +1,362 @@
+{% extends 'base.html' %}
+    {% block title %}
+      <title>Yelo Bank - Müasir Bank Xidmətləri</title>
+    {% endblock %}
+    
+    {% block css%}
+      <link rel="stylesheet" href="{{ url_for('static', filename = 'CSS/index.css')}}">
+      
+    
+    {% endblock %}
+    {% block navbar %}
+      
+    {% endblock %}
+      
+    {% block content %}
+      
+      <div id="carouselExampleDark" class="carousel carousel-dark slide not-menu-main" data-bs-ride="carousel">
+        <ol class="carousel-indicators justify-content-end">
+          <li type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
+          <li type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></li>
+          <li type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></li>
+          <li type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></li>
+          <li type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <div class="d-flex">
+              <div class="carousel-text d-flex flex-column justify-content-center align-items-start text-body fs-5 col-6" style="margin-top: 140px;">
+                <h1 class="text-body">Bu 13 sənə düşərli olacaq!</h1>
+                <p class="text-body">Tam onlayn kredit</p>
+                <button type="button" class="btn btn-dark">Sifariş et</button>
+              </div>
+              <div class="carousel-image col-6">
+                  <img src="{{ url_for('static', filename = 'images/13-site-file.png')}}" alt="13_faiz_endirim"> 
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <div class="d-flex">
+              <div class="carousel-text d-flex flex-column justify-content-center align-items-start fs-5 col-6" style="margin-top: 140px;">
+                <h1 class="text-body">Banka gəlmədən</h1>
+                <p class="text-body">Tam onlayn kredit</p>
+                <a href="#">
+                  <span>
+                    Daha ətraflı
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </span>
+                </a>
+              </div>
+              <div class="carousel-image col-6">
+                  <img src="{{ url_for('static', filename = 'images/onlayn_kredit-saytcover.png')}}" alt="13_faiz_endirim"> 
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <div class="d-flex">
+              <div class="carousel-text d-flex flex-column justify-content-center align-items-start fs-5 col-6" style="margin-top: 140px;">
+                <h1 class="text-body">Ad günü hədiyyəsi</h1>
+                <p class="text-body">Endirimli və komissiyasız kredit</p>
+                <div class="d-flex">
+                  <button type="button" class="btn btn-dark me-5">Sifariş et</button>
+                  <a href="#" class="align-self-center">
+                    <span>
+                      Daha ətraflı
+                      <i class="fa-solid fa-arrow-right-long"></i>
+                    </span>
+                  </a>
+                </div>
+                
+              </div>
+              <div class="carousel-image col-6">
+                  <img src="{{ url_for('static', filename = 'images/birthday_-_karusel_2.jpg')}}" alt="13_faiz_endirim"> 
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <div class="d-flex">
+              <div class="carousel-text d-flex flex-column justify-content-center align-items-start fs-5 col-6" style="margin-top: 140px;">
+                <h1>Baxışını dəyiş</h1>
+                <div class="d-flex">
+                  <button type="button" class="btn btn-dark me-5">Sifariş et</button>
+                  <a href="#" class="align-self-center">
+                    <span>
+                      Daha ətraflı
+                      <i class="fa-solid fa-arrow-right-long"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="carousel-image col-6">
+                  <img src="{{ url_for('static', filename = 'images/1.png')}}" alt="13_faiz_endirim"> 
+              </div>
+            </div>
+          </div>  
+          <div class="carousel-item" data-bs-interval="5000">
+            <div class="d-flex">
+              <div class="carousel-text d-flex flex-column justify-content-center align-items-start fs-5 col-6" style="margin-top: 140px;">
+                <h1 class="text-body">Kredit cəmi 7 dəqiqəyə al!</h1>
+                <p class="text-body">Onlayn sifariş et, filiala gəlmə</p>
+                <button type="button" class="btn btn-dark">Sifariş et</button>
+              </div>
+              <div class="carousel-image col-6">
+                  <img src="{{ url_for('static', filename = 'images/yelo_az_-_7_deqiqe-aze_1.jpg')}}" alt="13_faiz_endirim"> 
+              </div>y
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-5 not-menu-main">
+        <h4>
+          Storilər 
+          <span class="badge rounded-circle text-bg-warning text-light">
+            3
+          </span>
+        </h4>
+
+        <div class="d-flex justify-content-between">
+          {% for story in stories %}
+            <div class="card {{ story.text_bg }} mb-3 border rounded-4">
+              <div class="card-body">
+                <span class="badge rounded-pill text-bg-light {{ story.text }}">{{ story.title }}</span>
+                <p class="card-text">{{ story.description }}</p>
+              </div>
+              <img src="{{ story.img }}" class="card-img" alt="...">
+              <a href="#" class="full_link"></a>
+            </div>
+          {% endfor %}
+        </div>
+        
+      
+        <div class="d-flex justify-content-between my-4">
+          <div class="d-flex rounded justify-content-around rounded_div rounded-3">
+            <div class="d-flex flex-column text_side_of_rounded_div ms-3">
+              <h4 class="fs-5 fw-bold">Yelo Light</h4>
+              <p class="m-1 text-secondary fw-light">İstənilən ödənişlər üçün doğru seçim</p>
+              <div class="d-flex flex-row mt-2">
+                <div class="d-flex flex-column col-6 p-0">
+                  <p class="m-1 text-secondary fw-light">Qalığa gəlir</p>
+                  <p class="m-1 fw-bold fs-5">5%</p>
+                </div>
+                <div class="d-flex flex-column col-6 p-0">
+                  <p class="m-1 text-secondary fw-light">Cashback</p>
+                  <p class="m-1 fw-bold fs-5">30%-dək</p>
+                </div>
+              </div>
+              <button type="button" class="btn btn-warning mt-4" id="order_it">Sifariş et</button>
+            </div>
+            <div class="image_side_of_rounded_div"></div>
+          </div>
+          <div class="rounded-3 calculator px-4 py-4">
+            <div class="d-flex justify-content-between pb-3">
+              <div>
+                <h5>Kredit kalkulyatoru</h5>
+              </div>
+              <div>
+                <a href="#" class="text-decoration-none text-primary">
+                  <span>
+                    Daha ətraflı
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <div class="d-flex w-100 rounded" style="border: 1px solid gainsboro; border-bottom: 0; height: 75px;">
+              <div class="w-50" style="border-right: 1px solid gainsboro;">
+                <p class="ms-2 mb-0 pt-2" style="font-size: 13px;">Aylıq əmək haqqı</p>
+                <input type="number" name="salary" id="salary" class="ms-2 border-0 fw-bold fs-4" style="width: 60%; outline: 0;" value="7500" min="350" max="14950" >
+                <span style="font-size: 13px;">AZN</span>
+                <input type="range" name="salary_range" id="salary_range" class="w-100" value="7500" min="350" max="14950" step = "100">
+              </div>
+              <div class="w-50" style="border-right: 1px solid gainsboro;">
+                <p class="ms-2 mb-0 pt-2" style="font-size: 13px;">Məbləğ</p>
+                <input type="number" name="amount" id="amount" class="ms-2 border-0 fw-bold fs-4" style="width: 60%; outline: 0;" value="15000" min="300" max="30000">
+                <span style="font-size: 13px;">AZN</span>
+                <input type="range" name="amount_range" id="amount_range" class="w-100" value="15000" min="300" max="30000" step = "100">
+              </div>
+              <div class="w-50" style="border-right: 0;">
+                <p class="ms-2 mb-0 pt-2" style="font-size: 13px;">Müddət</p>
+                <input type="number" name="period" id="period" class="ms-2 border-0 fw-bold fs-4" style="width: 60%; outline: 0;" value="12" min="6" max="48">
+                <span style="font-size: 13px;">AY</span>
+                <input type="range" name="period" id="period_range" class="w-100" value="12" min="6" max="48" step = "1">
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between my-5 w-75 mx-auto">
+              <div>
+                <p class="m-0 ps-4 fs-6">Aylıq ödəniş</p>      
+                <b><span class = "fs-4" id="monthly_pay"></span>AZN</b>
+              </div>
+              <div>
+                <button type="button" class="btn btn-warning py-3 px-4 rounded-3 fw-bold fs-6" id="order_credit">Kredit sifarişi</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h4 style="margin-bottom: 30px;">
+          Sizin üçün faydalı
+        </h4>
+
+        <div class="useful_for_you">
+          <div class="d-flex flex-column justify-content-between left_side">
+            <div style="position: relative; top: 50px; left: 50px; width: 37%;">
+              <h3>YeloBank App</h3>      
+              <p>Yelo-dan yeni və parlaq mobil əlavə. Hesablarını izlə, köçürmə və ödənişlərini sürətli et.</p>        
+            </div>
+            <div class="d-flex justify-content-around rounded-2 bg-body w-50" style="position: relative; bottom: 50px; left: 50px;">
+              <a href="#" class="text-decoration-none text-secondary">
+                <div class="d-flex align-items-center p-2 rounded-3">
+                  <div class="logo">
+                    <img src="{{ url_for('static', filename = 'images/apple.svg')}}" style = "width: 25px; height: 25px;" class="me-2" alt="">
+                  </div>
+                  <div class="download_app">
+                    <p class="m-0" style="font-size: 13px;">Yüklə</p>
+                    <p class="m-0" style="font-size: 13px;">App Store</p>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="text-decoration-none text-secondary">
+                <div class="d-flex align-items-center p-2 rounded-3">
+                  <div class="logo">
+                   <img src="{{ url_for('static', filename = 'images/google_play.svg')}}" style = "width: 25px; height: 25px;" class="me-2" alt="">
+                  </div>
+                  <div class="download_app">
+                    <p class="m-0" style="font-size: 13px;">Yüklə</p>
+                    <p class="m-0" style="font-size: 13px;">Google Play</p>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="text-decoration-none text-secondary">
+                <div class="d-flex align-items-center p-2 rounded-3">
+                  <div class="logo">
+                    <img src="{{ url_for('static', filename = 'images/huawei_play.svg')}}" style = "width: 25px; height: 25px;" class="me-2" alt="">
+                  </div>
+                  <div class="download_app">
+                    <p class="m-0" style="font-size: 13px;">Yüklə</p>
+                    <p class="m-0" style="font-size: 13px;">AppGallery</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column justify-content-between my-4 rounded-3 ms-auto" style=" height: 400px; width: 32%; border: 1px solid gainsboro;">
+          <div class="d-flex px-4">
+            <div class="d-flex justify-content-between w-100 pt-4 mt-2">
+              <div>
+                <h5 class="fw-bolder">Valyuta məzənnələri</h5>
+              </div>
+              <div>
+                <button class="btn dropdown-toggle p-0" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                  Nağd
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item">Nağd</a></li>
+                  <li><a class="dropdown-item">Nağdsız</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex px-4">
+            <div class="d-flex justify-content-between w-100 fw-bolder" style="border-bottom: 3px solid #ffc628;">
+              <div>
+                <input class="border-0 w-100 fs-4" type="number" name="selling" id="selling" style="outline: 0;" placeholder="Satıram">
+              </div>
+              
+                <select class="border-0" name="selling_select" id="selling_select">
+                  <option value="AZN">AZN</option>
+                  <option value="USD">USD</option>
+                  <option value="EUR">EUR</option>
+                </select>
+              
+            </div>
+          </div>
+          <div class="d-flex px-4">
+            <div class="d-flex justify-content-between w-100 fw-bolder" style="border-bottom: 3px solid #ffc628;">
+              <div>
+                <div class="border-0 w-100 fs-4" id="buying">Alıram</div>
+              </div>
+              
+                <select class="border-0" name="buying_select" id="buying_select">
+                  <option value="USD">USD</option>
+                  <option value="EUR">EUR</option>
+                </select>
+              
+            </div>
+          </div>
+          <div class="d-flex flex-row justify-content-between px-4" style="width: 80%;">
+            <div class="d-flex flex-column">
+              <div class="fw-lighter">Valyuta</div>
+              <div class="fw-bolder">USD</div>
+              <div class="fw-bolder">EUR</div>              
+            </div>
+            <div class="d-flex flex-column">
+              <div class="fw-lighter">Alış</div>
+              <div class="fw-bolder" id="dollar_price">{{ '%0.4f'|format(dollar_buy|float) }}</div>
+              <div class="fw-bolder" id="euro_price">{{ euro_buy }}</div>              
+            </div>
+            <div class="d-flex flex-column">
+              <div class="fw-lighter">Satış</div>
+              <div class="fw-bolder" id = "azn_price_for_usd">{{ '%0.4f'|format(dollar_sell|float) }}</div>
+              <div class="fw-bolder" id = "azn_price_for_eur">{{ euro_sell }} </div>              
+            </div>
+          </div>
+          <div class="d-flex px-4" style="font-size: 13px;">
+            Region filiallarında məzənnələr fərqli ola bilər  
+          </div>
+          <div class="d-flex p-0">
+            <button type="button" class="btn btn-outline-primary d-flex justify-content-between w-100 fw-bold px-4 py-3" style="border: 0; border-top: 1px solid gainsboro;"> 
+              <span>
+                Bütün məzənnələr
+              </span>
+              <span>
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <h4 style="margin-bottom: 30px;">
+          Son xəbərlər
+        </h4>
+         <div class="row d-flex justify-content-between">
+          {% for news in all_news %}
+              <div class="card for_image border border-1 rounded-3">
+                <div class="card-body news">
+                  <p class="card-title fw-bold mb-4">{{news.title}}</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="text-primary">
+                      <b>Daha ətraflı</b>
+                      <i class="fa-solid fa-arrow-right-long"></i>
+                    </span>
+                    <span>
+                      {{ news.date }}
+                    </span>
+                  </div>
+                </div>
+                <a href="/az/news/{{news.slug}}" class="full_link"></a>
+              </div>
+          {% endfor %}
+        </div>
+
+        <div class="text-center mt-4 mb-5 pb-5">
+          <a type="button" class="btn btn-outline-primary px-4 py-3" href="{{ url_for('news') }}">
+            Bütün xəbərlər
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </a>
+        </div>
+      </div>
+    {% endblock %}
+
+
+
+    {% block footer %}
+    {% endblock %}
+
+    {% block js %}
+      <script src="{{ url_for('static', filename = 'JavaScript/index.js')}}"></script>
+    {% endblock %}

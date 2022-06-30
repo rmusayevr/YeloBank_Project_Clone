@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.left-contact > a:nth-child(1):hover{
+    color: #2A66FA !important;
+}
+.left-contact > a:nth-child(2):hover{
+    color: palevioletred !important;
+}
+.left-contact > a:nth-child(3):hover{
+    color: #0A66C2 !important;
+}
+.left-contact > a:nth-child(4):hover{
+    color: #FF0000 !important;
+}
+.left-contact > a:nth-child(5):hover{
+    color: #1A8CD8 !important;
+}
+
+.foot-data {
+    width: 40% !important;
+  }
+  

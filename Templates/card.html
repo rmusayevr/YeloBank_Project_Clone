@@ -1,0 +1,382 @@
+{% extends 'base.html' %}
+{% block title %}
+    <title>Yelo Bank - Müasir Bank Xidmətləri</title>
+{% endblock %}
+{% block css%}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='CSS/card.css') }}">
+{% endblock %}
+{% block navbar %}
+{% endblock %}
+{% block content %}
+<div class="w-100 not-menu-main">
+    <div class="card-container {% if card.card_name == 'Yelo Premium' %} bg-secondary {% else %} bg-warning {% endif %} border d-flex flex-row justify-content-around align-items-center">
+        <div class="left d-flex flex-column justify-content-around h-75 w-50">
+            <h1 class="card-name">{{ card.card_name}}</h1>
+            <button class="order-button"><a href="#">Sifariş et</a></button>
+        </div>
+        <div class="right ">
+            <img id="div-img" src="{{ card.card_img }}" alt="">
+        </div>
+    </div>
+    <div class="card-data d-flex flex-row align-items-center justify-content-between w-25 m-auto mt-5   js-container ">
+        <h5 id="firstb" class="b-bottom" style="width: 140px; height: 50px; text-align: center;">Kart haqqında</h5>
+        <h5 id="secondb" style="width: 140px; height: 50px; text-align: center;">Sənədlər</h5>
+    </div>
+    <div class="show-hide " id="firstd">
+        {{ card.card_detail | safe }}
+    </div>
+    <div class="d-none show-hide w-100 " id="secondd">
+        <div class="documents w-75 m-auto row  mt-5 d-flex align-items-center justify-content-center">
+            <div class="document d-flex flex-row col-3 m-3 mt-0 mb-3 border border-1 rounded justify-content-between align-items-center row "
+                style="height: 100px;">
+                <div class="left-document col-3">
+                    <img src="https://www.yelo.az/site/templates/style/img/pdf.svg" alt=""
+                        style="width: 60px; height: 60px">
+                </div>
+                <div class="right-document d-flex flex-column align-items-start justify-content-between col-8">
+                    <h6>Təhlükəsizlik qaydaları</h6>
+                    <div class="right-text d-flex flex-row align-items-end justify-content-between">
+                        <a href="#">Yüklə</a>
+                        <p style="margin-bottom: 0; margin-left: 10px;" class="text-secondary">507 KB</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="document d-flex flex-row col-3 m-3 mt-0 mb-2 border border-1 rounded justify-content-between align-items-center row"
+                style="height: 100px;">
+                <div class="left-document col-3">
+                    <img src="https://www.yelo.az/site/templates/style/img/pdf.svg" alt=""
+                        style="width: 60px; height: 60px">
+                </div>
+                <div class="right-document d-flex flex-column align-items-start justify-content-between col-8">
+                    <h6>Vergiyə cəlb olunan xidmətlər</h6>
+                    <div class="right-text d-flex flex-row align-items-end justify-content-between">
+                        <a href="#">Yüklə</a>
+                        <p style="margin-bottom: 0; margin-left: 10px;" class="text-secondary">507 KB</p>
+                    </div>
+                </div>
+            </div>
+            <div class="document d-flex flex-row col-3 m-3 mt-0 mb-2 border border-1 rounded justify-content-between align-items-center row"
+                style="height: 100px;">
+                <div class="left-document col-3 ">
+                    <img src="https://www.yelo.az/site/templates/style/img/pdf.svg" alt=""
+                        style="width: 60px; height: 60px">
+                </div>
+                <div class="right-document d-flex flex-column align-items-start justify-content-between col-8">
+                    <h6>Limitlər</h6>
+                    <div class="right-text d-flex flex-row align-items-end justify-content-between">
+                        <a href="#">Yüklə</a>
+                        <p style="margin-bottom: 0; margin-left: 10px; " class="text-secondary">507 KB</p>
+                    </div>
+                </div>
+            </div>
+            <div class="document d-flex flex-row col-3 m-3 mt-0 mb-2 border border-1 rounded justify-content-between align-items-center row"
+                style="height: 100px;">
+                <div class="left-document col-3">
+                    <img src="https://www.yelo.az/site/templates/style/img/pdf.svg" alt=""
+                        style="width: 60px; height: 60px">
+                </div>
+                <div class="right-document d-flex flex-column align-items-start justify-content-between col-8">
+                    <h6> Tariflər</h6>
+                    <div class="right-text d-flex flex-row align-items-end justify-content-between">
+                        <a href="#">Yüklə</a>
+                        <p style="margin-bottom: 0; margin-left: 10px;" class="text-secondary">507 KB</p>
+                    </div>
+                </div>
+            </div>
+            <div class="document d-flex flex-row col-3 m-3 mt-0 mb-2 border border-1 rounded justify-content-between align-items-center row"
+                style="height: 100px;">
+                <div class="left-document col-3">
+                    <img src="https://www.yelo.az/site/templates/style/img/pdf.svg" alt=""
+                        style="width: 60px; height: 60px">
+                </div>
+                <div class="right-document d-flex flex-column align-items-start justify-content-between col-8">
+                    <h6>Cashback hesablama qaydası</h6>
+                    <div class="right-text d-flex flex-row align-items-end justify-content-between">
+                        <a href="#">Yüklə</a>
+                        <p style="margin-bottom: 0; margin-left: 10px;" class="text-secondary">507 KB</p>
+                    </div>
+                </div>
+            </div>
+            <div class="document d-flex flex-row col-3 m-3 mt-0 mb-2 border border-1 rounded justify-content-between align-items-center row border-0"
+                style="height: 100px;">
+                <div class="left-document col-3">
+                    <img src="https://www.yelo.az/site/templates/style/img/pdf.svg" alt=""
+                        style="width: 60px; height: 60px; display: none;">
+                </div>
+                <div class="right-document d-flex flex-column align-items-start justify-content-between col-8 d-none">
+                    <h6 style="color: white;">Cashback hesablama qaydası</h6>
+                    <div class="right-text d-flex flex-row align-items-end justify-content-between d-none">
+                        <a href="#" style="color: white;">Yüklə</a>
+                        <p style="margin-bottom: 0; margin-left: 10px; color: white;">507 KB</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="get-card mt-5 mb-5 d-flex flex-column align-items-center justify-content-around">
+        <h4 class="text-center">Yelo kart əldə etmək üçün 3 sadə addım</h4>
+        <div class="row d-flex flex-row align-items-center justify-content-between">
+            <div class="col-4 d-flex flex-column mt-5">
+                <div class="bg-warning rounded-circle d-flex align-items-center justify-content-center"
+                    style="width: 75px; height: 75px">
+                    <h3>1</h3>
+                </div>
+                <p>Online sifariş formasını doldur</p>
+            </div>
+            <div class="col-4 d-flex flex-column">
+                <div class="bg-warning rounded-circle d-flex align-items-center justify-content-center mt-4"
+                    style="width: 75px; height: 75px">
+                    <h3>2</h3>
+                </div>
+                <p>Yelo karta sahib ol</p>
+            </div>
+            <div class="col-4 d-flex flex-column">
+                <div class="bg-warning rounded-circle d-flex align-items-center justify-content-center mt-5"
+                    style="width: 75px; height: 75px">
+                    <h3>3<h3p>
+                </div>
+                <p>Kartın istifadəsindən zövq al</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="parent-container" id="order-card">
+        <img src="{{ card.card_img }}" alt="" class="background-card">
+        <form action="/az/individuals/cards/{{id}}" method="POST" enctype="multipart/form-data">
+            {{ form.csrf_token }}
+
+            <div class="form-container">
+                <h2>{{card_name}}</h2>
+                <h1 class="bheader">{{card.card_name}} sifariş et</h1>
+                <div class="form-row card-type ">
+                    <div class="form-group mt-3 mb-1 col-12">
+                        {{form.cardType(class="form-control border text-center ")}}
+                    </div>
+                </div>
+                <div class="form-row d-flex flex-row row justify-content-between radio-container">
+                    {% for form_radio in form.currency %}
+                        <div class="custom-control custom-radio custom-control-inline ">
+                            {{form_radio(class="custom-control-input")}}
+                            <label class="custom-control-label  fw-bold">{{form_radio.label}}</label>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="form-row name-surname">
+                    <div class="form-group ">
+                        {{form.name(class="form-control border")}}
+                    </div>
+                    <div class="form-group">
+                        {{form.surname(class="form-control border")}}
+                    </div>
+                </div>
+                <div class="form-row row select-area">
+                    <div class="form-group col-3">
+                        {{form.prefix(class="form-control border")}}
+                    </div>
+                    <div class="form-group col-md-9">
+                        {{form.mobile_number(class = "form-control border ")}}
+                    </div>
+                </div>
+                <div class="form-row mt-3 d-flex flex-row justify-content-between code-branch">
+                    <div class="form-group  filial ">
+                        {{form.secret_word(class = "form-control border ")}}
+                    </div>
+                    <div class="form-group filial ">
+                        {{form.branch(class = "form-control border ")}}
+                    </div>
+                </div>
+                <div class="form-row mt-3 d-flex flex-row justify-content-between">
+                    <div class="form-group id-card d-flex flex-row align-items-center justify-content-center ">
+                        <label for="inputPassword3"><i class="fa fa-upload text-primary m-3 mt-0 mb-0"
+                                style="font-size:24px;"></i>Ş.V.-in ön tərəfi</label>
+                        <input type="file" name="file1" id = "inputPassword3" class="d-none" >
+                    </div>
+                    <div class="form-group id-card d-flex flex-row align-items-center justify-content-center ">
+                        <label for="inputPassword4"><i class="fa fa-upload text-primary m-3 mt-0 mb-0"
+                            style="font-size:24px;"></i>Ş.V.-in arxa tərəfi</label>
+                            <input type="file" name="file2" id = "inputPassword4" class="d-none" >
+                    </div>
+                </div>
+                <hr>
+                <div class="form-row d-flex flex-row mt-4 order-area">
+                    <p class="col-md-2 fa text-secondary d-flex align-items-center justify-content-center">&#xf00c;</p>
+                    <p class="col-md-7 ">Məlumatlarınızın təhlükəsizliyinə təminat veririk</p>
+                    <button type="submit" class="btn btn-warning col-md-3 mb-3">Sifariş et</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="carousel-container mt-5">
+        <h3>Kart Xidmətləri</h3>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div>
+                    <h4> Online Pin set</h4>
+                    <p>Yeni Yelo kart sifariş vermisən və PIN (ŞEN) kodu onlayn təyin etmək istəyirsən? O zaman PIN Set
+                        web xidmətimizdən faydalana bilərsən. </p>
+                    <button class="details blue">
+                        Daha ətraflı <span class="arrow">&#8594;</span>
+                    </button>
+                </div>
+                <img src="https://www.yelo.az/site/assets/files/6210/pin-kod-3.png" alt="">
+            </div>
+            <div class="item">
+                <div>
+                    <h4>Cash Back</h4>
+                    <p>Yelo kart ilə partnyor şəbəkəmizdə etdiyin ödənişlərə görə partnyordan asılı olaraq 30%-dək
+                        cashback əldə edə bilərsən.</p>
+                    <button class="details blue">
+                        Daha ətraflı <span class="arrow">&#8594;</span>
+                    </button>
+                </div>
+                <img src="https://www.yelo.az/site/assets/files/1163/cashback-pic.png" alt="">
+            </div>
+            <div class="item">
+                <div>
+                    <h4>Pin set</h4>
+                    <p>Bu xidmət kartının PIN kodunu unudanlar üçün çox faydalıdır</p>
+                    <button class="details blue">
+                        Daha ətraflı <span class="arrow">&#8594;</span>
+                    </button>
+                </div>
+                <img src="https://www.yelo.az/site/assets/files/1104/pin-reset.png" alt="">
+            </div>
+            <div class="item">
+                <div>
+                    <h4>Pin kodoun dəyişdirilməsi</h4>
+                    <p>Əgər kartının PIN kodunu dəyişdirmək istəyirsənsə, istənilən Yelo Bank ATM-ə yaxınlaşa bilərsən.
+                    </p>
+                    <button class="details blue">
+                        Daha ətraflı <span class="arrow">&#8594;</span>
+                    </button>
+                </div>
+                <img src="https://www.yelo.az/site/assets/files/1105/pinchange-img.png" alt="">
+            </div>
+            <div class="item">
+                <div>
+                    <h4>SMS məlumatlandırma</h4>
+                    <p>Bu xidmət kart sahiblərinə mobil nömrələri vasitəsilə hesablarına nəzarət imkanı yaradır.</p>
+                    <button class="details blue">
+                        Daha ətraflı <span class="arrow">&#8594;</span>
+                    </button>
+                </div>
+                <img src="https://www.yelo.az/site/assets/files/1106/sms-not.png" alt="">
+            </div>
+            <div class="item">
+                <div>
+                    <h4>3D secure</h4>
+                    <p>Yelo Bank internet ödənişlərin təhlükəsiz həyata keçirilməsini təmin etmək üçün 3D Secure
+                        xidmətini təqdim edir. Xidmət ödənişsizdir.</p>
+                    <button class="details blue">
+                        Daha ətraflı <span class="arrow">&#8594;</span>
+                    </button>
+                </div>
+                <img src="https://www.yelo.az/site/assets/files/1107/3d-secure-img.png" alt="">
+            </div>
+            <div class="item">
+                <div>
+                    <h4>Cash by code</h4>
+                    <p>Bu xidmət Yelo Bank kart sahiblərinə bank kartı olmayan şəxslərə günün istənilən vaxtı pul
+                        vəsaiti göndərmək imkanı verir.</p>
+                    <button class="details blue">
+                        Daha ətraflı <span class="arrow">&#8594;</span>
+                    </button>
+                </div>
+                <img src="https://www.yelo.az/site/assets/files/1108/cash-by-code-fin.png" alt="">
+            </div>
+            <div class="item">
+                <div>
+                    <h4>Card to card</h4>
+                    <p>Bu xidmət kart sahiblərinə ATM şəbəkəsi vasitəsilə bir kartdan digər karta tez və rahat köçürmə
+                        imkanı verir.</p>
+                    <button class="details blue">
+                        Daha ətraflı <span class="arrow">&#8594;</span>
+                    </button>
+                </div>
+                <img src="https://www.yelo.az/site/assets/files/1109/card-to-card-img.png" alt="">
+            </div>
+            <div class="item ">
+                <div>
+                    <h4>ATM Pin set</h4>
+                    <p>Bu xidmət vasitəsilə ATM-dən PIN kodu təyin etmək çox asandır.</p>
+                    <button class="details blue">
+                        Daha ətraflı <span class="arrow">&#8594;</span>
+                    </button>
+                </div>
+                <img src="https://www.yelo.az/site/assets/files/6706/atm_pinset.png" alt="">
+            </div>
+            <div class="item bg-light ">
+                <div>
+                    <h4 class="text-light">ATM Pin set</h4>
+                    <p class="text-light"> Bu xidmət vasitəsilə ATM-dən PIN kodu təyin etmək çox asandır.</p>
+                    
+                </div>
+                <img src="https://www.yelo.az/site/assets/files/6706/atm_pinset.png" style="display: noneı" alt="">
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <h4>
+        Storilər
+        <span class="badge rounded-circle text-bg-warning text-light">
+        3
+        </span>
+        </h4>
+        <div class="d-flex justify-content-between">
+            {% for story in stories %}
+            <div class="card {{ story.text_bg }} mb-3 border rounded-4">
+                <div class="card-body">
+                <span class="badge rounded-pill text-bg-light {{ story.text }}">{{ story.title }}</span>
+                <p class="card-text">{{ story.description }}</p>
+                </div>
+                <img src="{{ story.img }}" class="card-img" alt="...">
+                <a href="#" class="full_link"></a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+{% block footer %}
+{% endblock %}
+
+{% block js %}
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script src="https://kit.fontawesome.com/3895682cdd.js" crossorigin="anonymous"></script>
+    <script src="{{url_for('static', filename = 'JavaScript/card.js')}}"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: false,
+            margin: 300,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+
+{% endblock %}

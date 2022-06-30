@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+    {% block title %}
+      <title>{{ the_news.title }} | Yelo Bank</title>
+    {% endblock %}
+    
+    {% block css%}
+      <link rel="stylesheet" href="{{ url_for('static', filename = 'CSS/news_slug.css')}}">
+    {% endblock %}
+        
+    {% block content %}
+    <div class="container" style="padding-top: 150px;">
+      <div class="d-flex justify-content-between" style="width: 53.5%;">
+        <a class="text-primary fs-6 text-decoration-none fw-bolder me-5" href="{{ url_for('news')}}"><i class="fa-solid fa-arrow-left-long me-2"></i>Xəbərlər siayhısı</a>
+        <h1 class="fs-5 text-secondary fw-normal">Xəbərlər</h1>
+      </div>
+      
+      <h1 class="text-center mt-4" style="font-size: 55px;">{{ the_news.title }}</h1>
+      <h6 class="text-center mt-1">{{ the_news.date }}</h6>
+      <div class="text-secondary py-5 my-5">{{ the_news.description | safe}}</div>
+
+    {% endblock %}
+
+    {% block footer %}
+    {% endblock %}
+
+    {% block js %}
+        <script src="{{ url_for('static', filename = 'JavaScript/news.js')}}"></script>
+    {% endblock %}
